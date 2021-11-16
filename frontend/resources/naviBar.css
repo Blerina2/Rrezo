@@ -1,0 +1,91 @@
+.navbar {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: .7rem 0;
+    height: 80px;
+    display: flex;
+    border-bottom: 1px solid ;
+}
+.container {
+    max-width: 115rem;
+    padding: 0 ;
+    display: flex;
+    width: 100%;
+}
+.navbar__bubble {
+    color: #2C465F;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.navbar__title {
+    color: #2C465F;
+    cursor: pointer;
+    margin: 30px;
+    margin-left: 10px;
+
+    margin-top: 30px;
+
+
+}
+.navbar__title ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.navbar__navigation-items {
+    margin-top: 30px;
+    margin-left: auto;
+}
+.navbar__navigation-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.navbar__navigation-items a:hover,
+.navbar__navigation-items a:active {
+    color: #2C465F;
+}
+
+.navbar__subtitle {
+    margin-top: 28px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-university{
+    background: gray;
+    color: black;
+}
+
+.fa-question{
+    background: red;
+    color: black;
+}
