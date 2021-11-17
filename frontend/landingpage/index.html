@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Rrezo</title>
-    <link rel="stylesheet" href="/frontend/landingPage.css">
-    <link rel="stylesheet" href="/frontend/resources/naviBar.css">
+    <link rel="stylesheet" href="/frontend/resources/css/landingPage.css">
+
+    <link rel="stylesheet" href="/frontend/resources/css/naviBar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/frontend/resources/naviBarBottom.css">
+    <link rel="stylesheet" href="/frontend/resources/css/naviBarBottom.css">
+
 
 </head>
 <body>
@@ -30,21 +32,22 @@
 </nav>
 <img src="/frontend/resources/images/logoLandingPage.png"></img>
 
-<div class="navBarBottom">
-    <div class="">
-        <ul>
-            <li><a>Kontakt</a></li>
-            <li><a>Siguria</a></li>
-        </ul>
+<nav class="navBarBottom">
+    <div class="container">
+        <div class="navbarBottom__title">
+            <ul>
+                <li><a class="fa fa-address-card" aria-hidden="true" title="Kontakt" ></a></li>
+                <li><a class="fa fa-user-secret" aria-hidden="true" title="Siguria" ></a></li>
+            </ul>
+        </div>
+        <div class="navbarBottom__navigation-items">
+            <ul>
+                <li><a class="fa fa-tasks" aria-hidden="true" title="Kriteret"></a></li>
+                <li><a class="fa fa-wrench" aria-hidden="true" title="Problemet teknike"></a></li>
+            </ul>
+        </div>
     </div>
-    <div class="">
-        <ul>
-            <li><a>Kriteret</a></li>
-            <li><a>Problemet Teknike</a></li>
-        </ul>
-    </div>
-</div>
-
+</nav>
 
 </body>
 </html>
