@@ -62,9 +62,9 @@
     margin-top: 28px;
 }
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+    /*padding: 10px;*/
+    /*font-size: 30px;*/
+    width: 15px;
     text-align: center;
     text-decoration: none;
 }
@@ -76,16 +76,29 @@
 
 
 .fa-facebook {
+    padding: 10px;
     background: #3B5998;
+    border-radius: 50%;
+    font-size:24px;
     color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .fa-university{
-    background: gray;
+    padding: 10px;
+    background: lightblue;
+    border-radius: 50%;
+    font-size:24px;
     color: black;
+    text-shadow: 1px 1px 1px lightblue;
+
 }
 
 .fa-question{
-    background: red;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    font-size:24px;
     color: black;
+    text-shadow: 1px 1px 1px lightblue;
 }
