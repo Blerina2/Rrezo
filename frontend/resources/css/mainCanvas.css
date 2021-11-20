@@ -1,0 +1,10 @@
+/*https://codepen.io/amit_sheen*/
+
+#mainCanvas{
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+}

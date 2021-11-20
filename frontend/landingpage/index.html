@@ -3,59 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Rrezo</title>
-    <link rel="stylesheet" href="/frontend/resources/css/landingPage.css">
-
-    <link rel="stylesheet" href="/frontend/resources/css/naviBar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/frontend/resources/css/naviBarBottom.css">
-
-
+    <link rel="stylesheet" href="../resources/css/gridContainer.css">
+    <link rel="stylesheet" href="../resources/css/earth.css">
+    <link rel="stylesheet" href="../resources/css/mainCanvas.css">
 </head>
 <body>
-
-<nav class="navbar">
-    <div class="container">
-        <div class="navbar__title">
-            <ul>
-                <li><a class="fa fa-facebook" href="https://www.facebook.com/groups/352029608473493/"
-                       target="_blank"></a></li>
-                <li><a class="fa fa-university" href="https://fiek.uni-pr.edu/" target="_blank"></a></li>
-            </ul>
-        </div>
-        <div class="navbar__navigation-items">
-            <ul>
-                <li><a class="fa fa-question" aria-hidden="true" title="Ndihme"></a></li>
-<!--                <li><a class="fa fa-navicon"></a></li>-->
-            </ul>
-        </div>
+<div class="grid-container">
+    <div class="grid-item" >
+        <canvas id="mainCanvas"> </canvas>
+    <div class="earth"> <div> </div> </div>
     </div>
-</nav>
-<!-- <div class="logoRrezo">-->
-<!-- <img  src="/frontend/resources/images/Logoja.png" alt=" Logo Rrezo" class="logoRrezo">-->
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+</div>
 
-<!-- </div>-->
 
-<figure>
-    <img src="/frontend/resources/images/Logoja.png" alt="Llogoja" width="1475px" height="400px" position="absolute" >
 
-</figure>
 
-<nav class="navBarBottom">
-    <div class="container">
-        <div class="navbarBottom__title">
-            <ul>
-                <li><a class="fa fa-address-card" aria-hidden="true" title="Kontakt" ></a></li>
-                <li><a class="fa fa-user-secret" aria-hidden="true" title="Siguria" ></a></li>
-            </ul>
-        </div>
-        <div class="navbarBottom__navigation-items">
-            <ul>
-                <li><a class="fa fa-tasks" aria-hidden="true" title="Kriteret"></a></li>
-                <li><a class="fa fa-wrench" aria-hidden="true" title="Problemet teknike"></a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
+
+
+
+
+
+<script src="/backend/bubbleCanvas.js">  </script>
 </body>
 </html>
