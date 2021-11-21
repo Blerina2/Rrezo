@@ -1,0 +1,19 @@
+.fa-tasks{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-tasks:hover,
+.fa-tasks:focus{
+    color: white;
+    text-shadow: none;
+}
+
+.fa-tasks:hover::before,
+.fa-tasks:focus::before{
+    opacity: 1;
+}
+.fa-tasks:hover:after,
+.fa-tasks:focus::after{
+    opacity: 1;
+}

@@ -1,0 +1,19 @@
+.fa-address-card-o{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-address-card-o:hover,
+.fa-address-card-o:focus{
+    color: white;
+    text-shadow: none;
+}
+
+.fa-address-card-o:hover::before,
+.fa-address-card-o:focus::before{
+    opacity: 1;
+}
+.fa-address-card-o:hover:after,
+.fa-address-card-o:focus::after{
+    opacity: 1;
+}

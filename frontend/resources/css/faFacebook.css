@@ -1,0 +1,19 @@
+.fa-facebook{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-facebook:hover,
+.fa-facebook:focus{
+    color: white;
+    text-shadow: none;
+}
+
+.fa-facebook:hover::before,
+.fa-facebook:focus::before{
+    opacity: 1;
+}
+.fa-facebook:hover:after,
+.fa-facebook:focus::after{
+    opacity: 1;
+}
