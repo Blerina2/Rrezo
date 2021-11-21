@@ -1,0 +1,19 @@
+.fa-university{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-university:hover,
+.fa-university:focus{
+    color: white;
+    text-shadow: none;
+}
+
+.fa-university:hover::before,
+.fa-university:focus::before{
+    opacity: 1;
+}
+.fa-university:hover:after,
+.fa-university:focus::after{
+    opacity: 1;
+}

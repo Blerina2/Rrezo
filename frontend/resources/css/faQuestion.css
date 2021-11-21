@@ -1,0 +1,19 @@
+.fa-question{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-question:hover,
+.fa-question:focus{
+    color: white;
+    text-shadow: none;
+}
+
+.fa-question:hover::before,
+.fa-question:focus::before{
+    opacity: 1;
+}
+.fa-question:hover:after,
+.fa-question:focus::after{
+    opacity: 1;
+}

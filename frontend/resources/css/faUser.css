@@ -1,0 +1,18 @@
+.fa-user{
+    display: flex;
+    justify-content: center;
+}
+.fa-user:hover,
+.fa-user:focus{
+    color: white;
+    text-shadow: none;
+
+}
+.fa-user:hover:before,
+.fa-user:focus:before{
+    opacity: 1;
+}
+.fa-user:hover:after,
+.fa-user:focus:after{
+    opacity: 1;
+}
