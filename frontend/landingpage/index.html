@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="../resources/css/faWrench.css">
     <link rel="stylesheet" href="../resources/css/faFacebook.css">
     <link rel="stylesheet" href="../resources/css/faQuestion.css">
+    <link rel="stylesheet" href="../resources/css/kontaktPopup.css">
+    <link rel="stylesheet" href="../resources/css/butoninMbylle.css">
+    <link rel="stylesheet" href="../resources/css/faWindowClose.css">
+    <link rel="stylesheet" href="../resources/css/formaLogin.css">
 
 </head>
 <body>
@@ -90,7 +94,7 @@
 <footer>
     <div class="grid-container-button">
         <div class="grid-item-button">
-            <a class="neon-button"> <i class="fa fa-address-card-o" title="Kontakt" aria-hidden="true"></i></a>
+            <a class="neon-button"> <i class="fa fa-address-card-o" title="Kontakt" aria-hidden="true" onclick="shfaqePopUp()"></i></a>
         </div>
         <div class="grid-item-button">
             <a class="neon-button" href="https://fiek.uni-pr.edu/" target="_blank"> <i class="fa fa-university"
@@ -117,9 +121,44 @@
     </div>
     <p>Created with <i class="fa fa-heart"></i> by <a>Blerina,Blerta,Arbresha</a></p>
 </footer>
-
-
+<!--popup kontakt-->
+<div class="grid-container-kontakt-popup" id="containerKontaktPopupId">
+    <div class="butonin-mbylle" >
+        <a class="neon-button">
+            <i class="fa fa-window-close-o" onclick="mbylleKontaktinPopUp()"></i>
+        </a>
+    </div>
+    <div class="kontakt-popup-item">
+        <div class="kontakt-image-box">
+            <div class="kontakt-image-box-dy">
+                <div class="kontakti-image-box-tre">
+                    <img class="logo-kontakt-popup" alt="Logo Rrezo" src="/frontend/resources/images/logoRrezo.jpg">
+                </div>
+            </div>
+        </div>
+        <form action="#">
+            <div class="teme">Na dërgoni një mesazhë</div>
+            <div class="kontakt-input-box">
+                <input class="kontakt-input-fushe" type="text" id="plotsimiEmriId"required>
+                <label class="kontakt-label">Shkruaj emrin tënd</label>
+            </div>
+            <div class="kontakt-input-box">
+                <input class="kontakt-input-fushe" type="text" id="plotsimiImelliId"required>
+                <label class="kontakt-label">Shkruajni imellën tuaj</label>
+            </div>
+            <div class="kontakt-mesazhe-box">
+                <textarea class="kontakti-siperfaqja-tekstit" id="plotsimiTekstitId"></textarea>
+                <label class="mesazh-box-label">Shkruani mesazhin tuaj</label>
+            </div>
+            <div class="kontakt-input-box">
+                <input class="kontakt-input-fushe" type="submit" id="kontaktInputFusheId" value="Dërgoje mesazhin" onclick="dergojeMesazhin()">
+            </div>
+        </form>
+    </div>
+</div>
+<!--popup kontakt end popup-->
 </body>
 <script src="/backend/bubbleCanvas.js"></script>
 <script src="/backend/signInUp.js"></script>
+<script src="/backend/shfaqePopUpWindows.js"></script>
 </html>
