@@ -3,7 +3,7 @@
     height: 20%;
     margin: 10px ;
     padding: 10px ;
-    content: url("../images/logoRrezo.jpg");
+    content: url("../../images/logoRrezo.jpg");
     filter: contrast(200%);
 }
 body{
