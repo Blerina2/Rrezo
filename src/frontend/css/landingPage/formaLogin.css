@@ -1,0 +1,105 @@
+.kontakt-popup-item  .teme{
+    font-size: 22px;
+    font-weight: 500;
+    color: #ba24c2;
+}
+.kontakt-popup-item form{
+    width:40%;
+    margin-right: 50%;
+    background: transparent;
+}
+.kontakt-popup-item .kontakt-input-box{
+    height: 50px;
+    width:100%;
+    margin:16px 0;
+    position: relative;
+}
+.kontakt-popup-item .kontakt-input-box .kontakt-input-fushe{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    font-size:16px;
+    outline: none;
+    padding-left: 16px;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.kontakt-popup-item .kontakt-input-box .kontakt-input-fushe:focus,
+.kontakt-popup-item .kontakt-input-box .kontakt-input-fushe:valid{
+    border-color: #ba24c2;
+    background-color: white;
+}
+.kontakt-popup-item .kontakt-input-box .kontakt-label {
+    position: absolute;
+    left:18px;
+    top:50%;
+    color: #ba24c2;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.kontakt-popup-item .kontakt-input-box .kontakt-input-fushe:focus ~ label,
+.kontakt-popup-item .kontakt-input-box .kontakt-input-fushe:valid ~ label{
+    top:0;
+    left:12px;
+    color:#ba24c2;
+    background: white;
+}
+.kontakt-mesazhe-box{
+    min-height: 100px;
+    margin:16px 0;
+    position: relative;
+}
+.kontakti-siperfaqja-tekstit{
+    position: relative;
+    height: 200px;
+    width: 300px;
+    resize: none;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.mesazh-box-label{
+    position: absolute;
+    font-size: 14px;
+    color: #ba24c2;
+    left:18px;
+    top:6px;
+    pointer-events:none;
+    transition: all 0.3s ease;
+}
+textarea{
+    border-color: #ba24c2;
+    background-color: white;
+}
+.kontakti-siperfaqja-tekstit:focus ~ .mesazh-box-label{
+    left: 12px;
+    top: -14px;
+    color:#ba24c2;
+    background: white;
+    font-size: 15px;
+}
+#kontaktInputFusheId{
+    color: white;
+    background-color: #ba24c2;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all;
+}
+#kontaktInputFusheId:hover{
+    background-color:#d43ddb;
+}
+.grid-container-kontakt-popup.show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+

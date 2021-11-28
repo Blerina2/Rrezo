@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, tr, td {
+            border-radius: 14px;
+            border-collapse: separate;
+            border-color: #d43ddb;
+            border: 2px solid;
+            color: black;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Rrezo</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/landingPage.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/mainCanvas.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/earth.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/gridContainer.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/gridContainerButtons.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/neonButton.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/footAutors.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/loginFormular.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/faAddressCardO.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/faUniversity.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/faTasks.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/faUserSecret.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/faWrench.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/faFacebook.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/faQuestion.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/kontaktPopup.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/butoninMbylle.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/faWindowClose.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/formaLogin.css">
+</head>
+<body>
+<div class="grid-container">
+    <div class="grid-item">
+        <canvas id="mainCanvas"></canvas>
+        <div class="earth">
+            <div></div>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="container-login-formulary">
+            <div class="container-login" id="containerLoginId">
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <header>Hapeni një llogari të re</header>
+                        <div class="form-group">
+                            <a class="fa fa-user"></a>
+                            <input class="my-input" type="text" placeholder="Emri i përdoruesit" id="usernameId"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <a class="fa fa-envelope"></a>
+                            <input class="my-input" type="text" placeholder="Imaili" id="imailiId" required>
+                        </div>
+                        <div class="form-group">
+                            <a class="fa fa-lock"></a>
+                            <input class="my-input" type="text" placeholder="Fjalëkalimi" id="passwordId" required>
+                        </div>
+                        <button>Regjistrohu</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <div class="form-group">
+                            <a class="fa fa-envelope"></a>
+                            <input class="my-input" placeholder="Imaili" type="text" id="imailiLoginId" required>
+                        </div>
+                        <div class="form-group">
+                            <a class="fa fa-lock"></a>
+                            <input class="my-input" placeholder="Fjalëkalimi" type="text" id="passwordLoginId" required>
+                        </div>
+                        <a href="#">Keni harruar fjalëkalimin tuaj</a>
+                        <button>Hyni</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Mirë se u ktheve </h1>
+                            <p>Për të mbajtur lidhje me ne , ju lutemi identifikohuni me të dhënat e juaja!</p>
+                            <button class="ghost" id="signInId">Sign in</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Krijoni llogarinë tuaj në Rrezo </h1>
+                            <button class="ghost" id="signUpId">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="logo-rrezo"></div>
+    </div>
+</div>
+<footer>
+    <div class="grid-container-button">
+        <div class="grid-item-button">
+            <a class="neon-button"> <i class="fa fa-wrench" title="Problemet teknike" aria-hidden="true"
+                                       onclick="shfaqePopUp()"></i></a>
+        </div>
+        <div class="grid-item-button">
+            <a class="neon-button" href="https://fiek.uni-pr.edu/" target="_blank"> <i class="fa fa-university"
+                                                                                       title="Universiteti"
+                                                                                       aria-hidden="true"></i></a>
+        </div>
+        <div class="grid-item-button">
+            <a class="neon-button"><i class="fa fa-tasks" title="Kriteret" aria-hidden="true"
+                                      onclick="shfaqePopUpKriter()"></i></a>
+        </div>
+        <div class="grid-item-button">
+            <a class="neon-button"><i class="fa fa-user-secret" title="Siguria" aria-hidden="true"
+                                      onclick="shfaqePopUpSiguria()"></i></a>
+        </div>
+        <div class="grid-item-button">
+            <a class="neon-button"><i class="fa fa-address-card-o" title="Kontakt" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid-item-button">
+            <a class="neon-button" href="https://www.facebook.com/fiek.edu/" target="_blank"> <i class="fa fa-facebook"
+                                                                                                 title="Facebook"
+                                                                                                 aria-hidden="true"></i></a>
+        </div>
+        <div class="grid-item-button">
+            <a class="neon-button"><i class="fa fa-question" title="Ndihmë" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <p>Created with <i class="fa fa-heart"></i> by <a><strong>Blerina,Blerta,Arbresha</strong></a></p>
+</footer>
+
+
+<!--popup kontakt-->
+<div class="grid-container-kontakt-popup" id="containerKontaktPopupId" >
+    <div class="butonin-mbylle">
+        <a class="neon-button">
+            <i class="fa fa-window-close-o" onclick="mbylleKontaktinPopUp()"></i>
+        </a>
+    </div>
+    <div class="kontakt-popup-item">
+        <div class="kontakt-image-box">
+            <div class="kontakt-image-box-dy">
+                <div class="kontakti-image-box-tre">
+                    <img class="logo-kontakt-popup" alt="Logo Rrezo" src="/src/frontend/images/logoRrezo.jpg">
+                </div>
+            </div>
+        </div>
+        <form action="#">
+            <div class="teme">Na dërgoni një mesazhë</div>
+            <div class="kontakt-input-box">
+                <input class="kontakt-input-fushe" type="text" id="plotsimiEmriId" required>
+                <label class="kontakt-label">Shkruaj emrin tënd</label>
+            </div>
+            <div class="kontakt-input-box">
+                <input class="kontakt-input-fushe" type="text" id="plotsimiImelliId" required>
+                <label class="kontakt-label">Shkruajni imellën tuaj</label>
+            </div>
+            <div class="kontakt-mesazhe-box">
+                <textarea class="kontakti-siperfaqja-tekstit" id="plotsimiTekstitId"></textarea>
+                <label class="mesazh-box-label">Shkruani mesazhin tuaj</label>
+            </div>
+            <div class="kontakt-input-box">
+                <input class="kontakt-input-fushe" type="submit" id="kontaktInputFusheId" value="Dërgoje mesazhin"
+                       onclick="dergojeMesazhin()">
+            </div>
+        </form>
+    </div>
+</div>
+<!--popup kontakt end popup-->
+
+<!--popup kriteret -->
+
+<div id="containerKriterPopUpId" style="display: none; visibility: hidden; width: 1000px;  ">
+    <div class="butonin-mbylle">
+        <a class="neon-button">
+            <i class="fa fa-window-close-o" onclick="mbylleKriterinPopUp()"></i>
+        </a>
+    </div>
+    <div style="height: 500px">
+        <form action="#" style="border-radius: 15px; border: 2px solid #ba24c2;  box-shadow: 0 0 5px 5px #ba24c2; ">
+            <p style=" color:purple; border:outset #d43ddb; border-radius:5px; text-align: center; margin-top: 2px;font-size: 20px;">
+                <strong>Kriteret</strong></p>
+            <ol style="color: black">
+                <li align="left">Student i FIEK
+                    <ul>
+                        <li>Ku do te pranohen vetem studentat e inxhenieris kompjuterike
+                    </ul>
+                </li>
+                <li align="left">Email
+                    <ul>
+                        <li>Studenti duhet te regjistrohet me emailn e fakultetit si deshmi qe eshte student</li>
+                    </ul>
+                </li>
+                <li align="left">Keqperdorimi
+                    <ul style="color: black">
+                        <li>Studenti nuk do ket te drejten e peruljes si dhe perdorimin e fjalve banale ndaj
+                            profesorit
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <table cellspacing="5px" cellpadding="2px">
+                <tr>
+                    <p style=" color:purple; border:outset #d43ddb; border-radius:5px; text-align: center; font-size: 20px;">
+                        <strong>Veprimet</strong></p>
+                </tr>
+                <tr>
+                    <th>Anonimiteti</th>
+                    <th>Fjalet Banale</th>
+                    <th>Perulja</th>
+                </tr>
+                <tr>
+                    <td>Pas konfirmimit te emailit askush nuk do jet ne gjendje ta di kush jeni ju (Perveq autoret e
+                        kesaj webfaqe)
+                    </td>
+                    <td>Nese studenti perdor fjal banale atehere ai student do te
+                        <mark>prejashtrohet</mark>
+                        nga faqja
+                    </td>
+                    <td>Studentit nuk i lejohet perulja ku ai student to te
+                        <mark>prejashtrohet</mark>
+                        nga webfaqja
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+</div>
+
+<!--popup kriteret end popup-->
+<!--popup siguria -->
+<div id="containerSiguriaPopUpId"
+     style="display: none;  visibility: hidden; width: 1000px; border: 3px solid #ba24c2;border-radius: 12px; box-shadow: 0 0 10px #ba24c2;
+height: 1000px; overflow: auto">
+    <div class="butonin-mbylle">
+        <a class="neon-button">
+            <i class="fa fa-window-close-o" onclick="mbylleSiguriaPopUp()"></i>
+        </a>
+    </div>
+    <div style="background-color: black ; font-size: 14px; font-family: 'Montserrat', sans-serif; margin-left: 2% ; margin-right: 2%;  ">
+        <h1>Siguria e privatesise</h1>
+        <p>Kjo është politika e privatësisë (“Politika e privatësisë”) që përshkruan praktikat tona të privatësisë për
+            faqen e internetit
+            <span style="color:purple;font-weight:bold">Rrezo.com</span>
+            aplikacionet dhe shërbimet e tjera ndërvepruese.
+            Kjo politikë e privatësisë ka për qëllim për të shpjeguar praktikat tona të privatësisë dhe mbulon fushat e
+            mëposhtme:</p>
+        <ol style="color: white">
+            <li><a href="#Zbatimi" style="color:lightcoral;background-color: transparent; text-decoration: underline;">
+                Kur zbatohet kjo politikë e privatësisë</a></li>
+            <li><a href="#Mbledhja e informacionit"
+                   style="color:lightcoral;background-color: transparent; text-decoration: underline;">Çfarë
+                informacioni është mbledhur?</a></li>
+            <li><a href="#Perdorimi"
+                   style="color:lightcoral;background-color: transparent; text-decoration: underline;">përdoret
+                informacioni i mbledhur.</a></li>
+            <li><a href="#Informacioni"
+                   style="color:lightcoral;background-color: transparent; text-decoration: underline;">Rishikimi,
+                përditësimi ose fshirja e informacionit të caktuar.</a></li>
+            <li><a href="#Mbrojtja" style="color:lightcoral;background-color: transparent; text-decoration: underline;">Mbrojtja
+                e Informacionit.</a></li>
+            <li><a href="#Tjera" style="color:lightcoral;background-color: transparent; text-decoration: underline;"> Të
+                ndryshme</a></li>
+        </ol>
+
+        <h3 id="Zbatimi">1.Kur zbatohet kjo politikë e privatësisë</h3>
+        <i>Politika e pivatësisë zbatohet: </i>
+        <ul>
+            <li>Pavarësisht nëse jeni duke hyrë në Faqe nëpërmjet një kompjuteri personal, një pajisjeje celulare ose
+                ndonjë teknologjie
+                ose pajisjeje tjetër të njohur ose të zhvilluar ose zbuluar më pas
+            </li>
+            <li>Nëse jeni duke hyrë në Faqe si përdorues i regjistruar (nëse ofrohet nga Sajti) ose përdorues tjetër i
+                Faqes;
+            </li>
+            <li>Për të gjitha informacionet (siç përcaktohet ky term më poshtë) të mbledhura nga Sajti (siç përcaktohet
+                më sipër)
+                Për përdorimin tonë të informacionit të kombinuar nëse kombinojmë informacionin)
+            </li>
+        </ul>
+        <u>Duke marrë pjesë në këtë sajt ose në ndonjë veçori,
+            aktivitet ose shërbim të ofruar nëpërmjet sajtit, ju pranoni praktikat tona të privatësisë siç përshkruhet
+            në këtë Politikë të Privatësisë.
+            Disa produkte ose shërbime të ofruara nga kjo faqe mund t'i nënshtrohen praktikave shtesë të privatësisë, të
+            tilla si praktikat se si informacioni mblidhet, përdoret,
+            shpërndahet dhe/ose zbulohet nga produkte ose shërbime të tilla dhe/ose si mund të ushtrosh zgjedhje në
+            lidhje me informacionin e tillë</u>
+
+        <h3 id="Mbledhja e informacionit">2. Çfarë informacioni është mbledhur?</h3>
+        <i>Kur përdorim termin "Informacion Personal" nënkuptojmë informacionin që ju na jepni që ju identifikon ose do
+            të lejonte dikë të kontaktojë me ju,
+            si emri juaj i plotë, adresa postare, adresa e emailit ose numri i telefonit. Kur përdorim termin
+            "Informacione të tjera",
+            nënkuptojmë çdo informacion tjetër përveç Informacionit Personal që mund të mblidhet për ju, duke përfshirë,
+            por pa u kufizuar në, identifikuesit e pajisjes dhe reklamave
+            dhe informacionin e mbledhur nëpërmjet cookies ose teknologjive ose identifikuesve të tjerë gjurmues (si ato
+            termat përcaktohen më poshtë).</i>
+        <ul type="circle">
+            <li>Regjistrimi i përdoruesit Për t'u regjistruar si anëtar i sitit, ju kërkohet të zgjidhni një emër
+                përdoruesi dhe fjalëkalim (së bashku, "ID-ja juaj e përdoruesit")
+                dhe mund t'ju kërkohet të jepni gjithashtu informacione të tjera, si adresën tuaj të emailit.Vini re
+                gjithashtu se, për privatësinë dhe sigurinë tuaj në linjë,
+                nëse persona të tjerë kanë qasje në pajisjen tuaj, ju rekomandojmë të dilni nga llogaria
+                juaj pasi të vizitoni ndonjë nga faqet e internetit, aplikacionet ose shërbime të tjera ndërvepruese që
+                lidhen me llogarinë tuaj.
+            </li>
+            <li>Në lidhje me disa veçori dhe funksione. Ne gjithashtu mund t'ju ofrojmë akses në disa veçori ose
+                funksione që mund t'i ofrojmë në sajt, si opsioni për të marrë pjesë në
+                komente, blerje dhe faqet e profilit të anëtarëve. Për t'u regjistruar ose për të marrë pjesë në këto
+                veçori ose funksione,
+                mund t'ju kërkohet të na jepni informacione të caktuara rreth jush në mënyrë që ne të personalizojmë
+                dhe/ose t'ju lejojmë të përdorni veçori dhe funksione të tilla.
+            </li>
+            </li>Faqja dhe/ose palët e treta mund të përdorin "cookies", "web beacons", objekte të përbashkëta lokale
+            Flash dhe teknologji të tjera të ngjashme gjurmimi
+            (bashkë, "Teknologjitë e gjurmimit") për të mbledhur informacione të tjera automatikisht ndërsa shfletoni
+            sajtin dhe ueb-in. "Cookies" janë zakonisht
+            tekste të bazuara në html ose shfletues ose skedarë të tjerë (dhe shpesh të referuar si cookie të
+            shfletuesit) që ndihmojnë në ruajtjen e informacionit,
+            preferencave të përdoruesit dhe/ose aktivitetit të përdoruesit. "Web beacons" (të njohura edhe si etiketa
+            imazhesh, gif, pikselë gjurmues
+            ose gabime në ueb) janë pjesë të vogla të kodit që përdoren për të mbledhur të dhëna, të tilla si numërimi i
+            shikimeve të faqeve,
+            shikimet e promovimit ose përgjigjet e reklamave. Objektet e përbashkëta lokale të Flash <abbr
+                title=" Flash cookies dhe  Adobe Flash">LSO</abbr> janë tekst ose skedarë të tjerë
+            që ndihmojnë në ruajtjen e preferencave dhe/ose aktivitetit të përdoruesit.
+            </li>
+        </ul>
+
+        <h3 id="Perdorimi">3.Si perdoret informacioni i mbledhur? </h3>
+        <i>Ne përdorim informacionin personal që mbledhim nga ju në mënyra të ndryshme, duke përfshirë:</i>
+        <ul type="square">
+            <li>Përpunimi i regjistrimit tuaj në Faqe, si për shembull verifikimi që adresa juaj e emailit është aktive
+                dhe e vlefshme
+            </li>
+            <li>Ruajtja e ID-së tuaj të Përdoruesit ose Informacione të tjera Personale, në mënyrë që të mos keni nevojë
+                ta rifusni atë sa herë që vizitoni Faqen;
+            </li>
+            <li>Përshtatja e përvojës suaj dhe/ose përndryshe përshtatja e asaj që shihni kur vizitoni, Faqen dhe/ose
+                sajtet e tjera, aplikacionet ose shërbimet
+                e tjera ndërvepruese nëpër Pajisjet, qoftë në pronësi, operim
+            </li>
+            <li>Përmirësimi i faqes ose shërbimeve tona dhe për qëllime të brendshme</li>
+        </ul>
+
+
+        <h3 id="Informacioni">4.Rishikimi, përditësimi ose fshirja e informacionit të caktuar.</h3>
+        <dl>
+            <dt>Regjistrimi i përdoruesit</dt>
+            <dd>Nëse jeni regjistruar në këtë sajt, në përgjithësi, ju mund të rishikoni, përditësoni ose fshini
+                informacione të caktuara të
+                mbledhura nga faqja, nëse jeni përdorues i regjistruar i sajtit, duke hyrë në sit dhe duke përdorur
+                mjetet e ofruara për të redaktuar informacionin e tillë.
+                Megjithatë, të dhënat personale që janë të nevojshme për të kontrolluar përshtatshmërinë, si data e
+                lindjes ose mosha, nuk mund të fshihen, por mund të modifikohen me
+                verifikim të mjaftueshëm të informacionit të saktë. Ne do t'ju lejojmë të ndryshoni pjesën e
+                fjalëkalimit të ID-së tuaj të Përdoruesit,
+                si dhe disa informacione të tjera që na keni dhënë në mënyrë që të mbani informacionin tuaj aktual.
+            </dd>
+            <dt>Rreziqet e privatësisë</dt>
+            <dd>Nëse barra ose shpenzimet e sigurimit të aksesit në informacionin tuaj janë në disproporcion me rreziqet
+                për privatësinë tuaj ose nëse të drejtat
+                legjitime të të tjerëve do të shkeleshin, ne mund të vendosim të mos ofrojmë akses në informacione të
+                tilla.
+                Në raste të tilla, ne do t'ju ofrojmë një shpjegim se përse nuk mund të sigurohet aksesi dhe informacion
+                kontakti për pyetje të mëtejshme.
+            </dd>
+            <dt>Opsione të tjera</dt>
+            <dd>Si përdorues i regjistruar, mund t'ju ofrohen gjithashtu opsione për të marrë njoftime të caktuara dhe
+                për të publikuar publikisht aktivitetet në të cilat përfshiheni
+                brenda sajtit.
+            </dd>
+        </dl>
+
+
+        <h3 id="Mbrojtja">5.Mbrojtja e Informacionit.</h3>
+        <ul type="none">
+            <li>Ndërsa Interneti dhe transmetimi i të dhënave nëpërmjet internetit nuk është 100% i sigurt nga
+                ndërhyrjet, ne mbajmë masa mbrojtëse fizike,
+                elektronike dhe procedurale të arsyeshme komerciale për të mbrojtur informacionin tuaj. Megjithatë,
+                pavarësisht nga përpjekjet tona dhe nga Pajisja që përdorni
+                për të hyrë në Faqe, është e mundur që palët e treta të përgjojnë ose të kenë akses në mënyrë të
+                paligjshme në transmetime, komunikime private ose informacione.
+            </li>
+            <li>Sulmet e phishing përpiqen të vjedhin të dhënat personale të identitetit dhe kredencialet e llogarisë
+                financiare të konsumatorëve.
+                "Phishers" përdorin emaile "të falsifikuara" për t'i çuar konsumatorët në faqet e internetit të
+                falsifikuara, ose përndryshe përgjigjen në
+                një mënyrë që është krijuar për të mashtruar marrësit që të zbulojnë informacione të tilla si numrat e
+                kartave të kreditit, emrat e përdoruesve të llogarisë,
+                fjalëkalimet dhe numrat e sigurimeve shoqërore.
+                <strong>NE NUK DËRGOJMË EMAIL QË KËRKOJMË TË SIGURONI OSE KONFIRMON NUMRAT E SIGURISË SHOQËRORE OSE EMRI
+                    TUAJ TË PËRDORËSIT OSE FALËKALIMI!</strong>
+
+                <h3 id="Tjera">6.Të ndryshme</h3>
+                <ul>
+                    <li>Të tjera
+                        <ul>
+                            <li>
+                                <mark>Ju lutemi rishikoni Marrëveshjen tonë të Kushteve të Përdorimit e cila rregullon
+                                    përdorimin tuaj të Faqes.
+                                    Çdo term që nuk është i përcaktuar në këtë Politikë të Privatësisë do të ketë
+                                    kuptimin e dhënë në Marrëveshjen e Kushteve të Përdorimit.
+                                </mark>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+        </ul>
+    </div>
+</div>
+<!--popup siguria end popup-->
+
+
+</body>
+<script type="application/javascript" src="/src/frontend/js/bubbleCanvas.js"></script>
+<script type="application/javascript" src="/src/frontend/js/signInUp.js"></script>
+<script type="application/javascript" src="/src/frontend/js/shfaqePopUpWindows.js"></script>
+<script type="application/javascript" src="/src/frontend/js/shfaqePopUpKriterin.js"></script>
+<script type="application/javascript" src="/src/frontend/js/shfaqePopUpSiguria.js"></script>
+</html>

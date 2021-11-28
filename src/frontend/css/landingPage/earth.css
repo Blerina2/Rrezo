@@ -15,7 +15,7 @@
 .earth >div{
     width: 200%;
     height: 100%;
-    background-image: url("/frontend/resources/images/earthPink.jpg");
+    background-image: url("/src/frontend/images/earthPink.jpg");
     animation: spin 30s linear alternate infinite;
     background-size: cover;
 

@@ -1,0 +1,16 @@
+.fa-window-close-o{
+    display: flex;
+    justify-content: center;
+}
+.fa-window-close-o:hover,
+.fa-window-close-o:focus{
+    color:black;
+}
+.fa-window-close-o:hover::before,
+.fa-window-close-o:focus::before{
+    opacity: 1;
+}
+.fa-window-close-o:hover::after,
+.fa-window-close-o:focus::after{
+    opacity: 1;
+}

@@ -1,0 +1,57 @@
+/*https://www.youtube.com/watch?v=6REjG1s6Z8k&list=PLImJ3umGjxdDqTlZhQxXBeGij9Oa9Xjnj&index=9*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+.grid-container-kontakt-popup{
+/*hidden by default*/
+    visibility: hidden;
+    display: none;
+    overflow: hidden;
+    max-width: 1050px;
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    margin: 0 20px;
+    -webkit-box-shadow: 0px 10px 49px -14px #FF10e8;
+    -moz-box-shadow: 0px 10px 49px -14px #FF10e8;
+    box-shadow: 0px 10px 49px -14px #FF10e8;
+    font-family: 'Montserrat', sans-serif;
+}
+.kontakt-popup-item{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 12px;
+}
+.kontakt-image-box{
+    max-width: 60%;
+    display:flex;
+    border-radius: 12px;
+    background: black;
+    -webkit-box-shadow: 0px 10px 49px -14px #FF10e8;
+    -moz-box-shadow: 0px 10px 49px -14px #FF10e8;
+    box-shadow: 0px 10px 109px -14px black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.kontakt-image-box-dy{
+    display: flex;
+    border-radius: 12px;
+    background: deepskyblue;
+    margin-left: 8px;
+}
+.kontakti-image-box-tre{
+    display: flex;
+    border-radius: 12px;
+    background: #FF10e8;
+    margin-left: 9px;
+}
+.logo-kontakt-popup{
+    filter: contrast(200%);
+    border-radius: 12px;
+    width: 250px;
+    margin-left: 10px;
+
+}
