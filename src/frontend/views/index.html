@@ -33,6 +33,7 @@
     <link type="text/css" rel="stylesheet" href="../css/landingPage/butoninMbylle.css">
     <link type="text/css" rel="stylesheet" href="../css/landingPage/faWindowClose.css">
     <link type="text/css" rel="stylesheet" href="../css/landingPage/formaLogin.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/problemetTeknikePopUp.css">
 </head>
 <body>
 <div class="grid-container">
@@ -118,7 +119,7 @@
                                       onclick="shfaqePopUpSiguria()"></i></a>
         </div>
         <div class="grid-item-button">
-            <a class="neon-button"><i class="fa fa-address-card-o" title="Kontakt" aria-hidden="true"></i></a>
+            <a class="neon-button"><i class="fa fa-address-card-o" title="Kontakt" aria-hidden="true" onclick="shfaqeProblemetTeknikePopUp()"></i></a>
         </div>
         <div class="grid-item-button">
             <a class="neon-button" href="https://www.facebook.com/fiek.edu/" target="_blank"> <i class="fa fa-facebook"
@@ -144,7 +145,7 @@
         <div class="kontakt-image-box">
             <div class="kontakt-image-box-dy">
                 <div class="kontakti-image-box-tre">
-                    <img class="logo-kontakt-popup" alt="Logo Rrezo" src="/src/frontend/images/logoRrezo.jpg">
+                    <img class="logo-kontakt-popup" alt="Logo Rrezo" src="../images/logoRrezo.jpg">
                 </div>
             </div>
         </div>
@@ -172,7 +173,6 @@
 <!--popup kontakt end popup-->
 
 <!--popup kriteret -->
-
 <div id="containerKriterPopUpId" style="display: none; visibility: hidden; width: 1000px;  ">
     <div class="butonin-mbylle">
         <a class="neon-button">
@@ -231,8 +231,8 @@
 
 
 </div>
-
 <!--popup kriteret end popup-->
+
 <!--popup siguria -->
 <div id="containerSiguriaPopUpId"
      style="display: none;  visibility: hidden; width: 1000px; border: 3px solid #ba24c2;border-radius: 12px; box-shadow: 0 0 10px #ba24c2;
@@ -418,11 +418,44 @@ height: 1000px; overflow: auto">
 </div>
 <!--popup siguria end popup-->
 
+<!--popup problemet teknike-->
+<div class="container-problemet-teknike-popup" id="containerProblemetTeknikeId">
+    <div class="butonin-mbylle">
+        <a class="neon-button">
+            <i class="fa fa-window-close-o" onclick="mbylleProblemetTeknikePopUp()"></i>
+        </a>
+    </div>
+    <div class="content-problemet-teknike-popup">
+        <div class="container-problemet-teknike-popup-front">
+            <address>
+                <div class="address details">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="text-nje">Bregu i Dillit, p.m. 10000 Prishtine</div>
+                    <div class="text-dy">Republika e Kosovës </div>
+                </div>
+                <div class="phone details">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="text-nje">+381(0)38 554 896 ext.102</div>
+                    <div class="text-dy">Fax. +381(0)38 542 525 </div>
+                </div>
+                <div class="email details">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <div class="text-nje">fiek@uni-pr.edu</div>
+            </div>
+            </address>
+        </div>
+    </div>
+
+</div>
+<!--popup problemet teknike end popup-->
+
+
 
 </body>
-<script type="application/javascript" src="/src/frontend/js/bubbleCanvas.js"></script>
-<script type="application/javascript" src="/src/frontend/js/signInUp.js"></script>
-<script type="application/javascript" src="/src/frontend/js/shfaqePopUpWindows.js"></script>
-<script type="application/javascript" src="/src/frontend/js/shfaqePopUpKriterin.js"></script>
-<script type="application/javascript" src="/src/frontend/js/shfaqePopUpSiguria.js"></script>
+<script type="application/javascript" src="../js/bubbleCanvas.js"></script>
+<script type="application/javascript" src="../js/signInUp.js"></script>
+<script type="application/javascript" src="../js/shfaqePopUpWindows.js"></script>
+<script type="application/javascript" src="../js/shfaqePopUpKriterin.js"></script>
+<script type="application/javascript" src="../js/shfaqePopUpSiguria.js"></script>
+<script type="application/javascript" src="../js/shfaqeProblemetTeknikePopUp.js"></script>
 </html>
