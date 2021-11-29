@@ -33,6 +33,7 @@
     <link type="text/css" rel="stylesheet" href="../css/landingPage/butoninMbylle.css">
     <link type="text/css" rel="stylesheet" href="../css/landingPage/faWindowClose.css">
     <link type="text/css" rel="stylesheet" href="../css/landingPage/formaLogin.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/problemetTeknikePopUp.css">
 </head>
 <body>
 <div class="grid-container">
@@ -118,7 +119,8 @@
                                       onclick="shfaqePopUpSiguria()"></i></a>
         </div>
         <div class="grid-item-button">
-            <a class="neon-button"><i class="fa fa-address-card-o" title="Kontakt" aria-hidden="true"></i></a>
+            <a class="neon-button"><i class="fa fa-address-card-o" title="Kontakt" aria-hidden="true"
+            onclick="shfaqeProblemetTeknikePopUp()"></i></a>
         </div>
         <div class="grid-item-button">
             <a class="neon-button" href="https://www.facebook.com/fiek.edu/" target="_blank"> <i class="fa fa-facebook"
@@ -144,7 +146,7 @@
         <div class="kontakt-image-box">
             <div class="kontakt-image-box-dy">
                 <div class="kontakti-image-box-tre">
-                    <img class="logo-kontakt-popup" alt="Logo Rrezo" src="../images/logoRrezo.jpg">
+                    <img class="logo-kontakt-popup" alt="Logo Rrezo" src="/src/frontend/images/logoRrezo.jpg">
                 </div>
             </div>
         </div>
@@ -202,7 +204,7 @@
                     </ul>
                 </li>
             </ol>
-            <table cellspacing="5px" cellpadding="2px">
+            <table style=" border-color: #ba24c2">
                 <tr>
                     <p style=" color:purple; border:outset #d43ddb; border-radius:5px; text-align: center; font-size: 20px;">
                         <strong>Veprimet</strong></p>
@@ -213,14 +215,14 @@
                     <th>Perulja</th>
                 </tr>
                 <tr>
-                    <td>Pas konfirmimit te emailit askush nuk do jet ne gjendje ta di kush jeni ju (Perveq autoret e
+                    <td style="background-color: #edbef1; border-color: #ba24c2">Pas konfirmimit te emailit askush nuk do jet ne gjendje ta di kush jeni ju (Perveq autoret e
                         kesaj webfaqe)
                     </td>
-                    <td>Nese studenti perdor fjal banale atehere ai student do te
+                    <td style="background-color: #edbef1; border-color: #ba24c2">Nese studenti perdor fjal banale atehere ai student do te
                         <mark>prejashtrohet</mark>
                         nga faqja
                     </td>
-                    <td>Studentit nuk i lejohet perulja ku ai student to te
+                    <td style="background-color: #edbef1; border-color: #ba24c2">Studentit nuk i lejohet perulja ku ai student to te
                         <mark>prejashtrohet</mark>
                         nga webfaqja
                     </td>
@@ -417,12 +419,40 @@ height: 1000px; overflow: auto">
     </div>
 </div>
 <!--popup siguria end popup-->
+<div class="container-problemet-teknike-popup" id="containerProblemetTeknikeId">
+    <div class="butonin-mbylle">
+        <a class="neon-button">
+            <i class="fa fa-window-close-o" onclick="mbylleProblemetTeknikePopUp()"></i>
+        </a>
+    </div>
+    <div class="content-problemet-teknike-popup">
+        <div class="container-problemet-teknike-popup-front">
+            <address>
+                <div class="address details">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="text-nje">Bregu i Dillit, p.m. 10000 Prishtine</div>
+                    <div class="text-dy">Republika e Kosovës </div>
+                </div>
+                <div class="phone details">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="text-nje">+381(0)38 554 896 ext.102</div>
+                    <div class="text-dy">Fax. +381(0)38 542 525 </div>
+                </div>
+                <div class="email details">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <div class="text-nje">fiek@uni-pr.edu</div>
+                </div>
+            </address>
+        </div>
+    </div>
 
+</div>
 
 </body>
-<script type="application/javascript" src="../js/bubbleCanvas.js"></script>
-<script type="application/javascript" src="../js/signInUp.js"></script>
-<script type="application/javascript" src="../js/shfaqePopUpWindows.js"></script>
-<script type="application/javascript" src="../js/shfaqePopUpKriterin.js"></script>
-<script type="application/javascript" src="../js/shfaqePopUpSiguria.js"></script>
+<script type="application/javascript" src="/src/frontend/js/bubbleCanvas.js"></script>
+<script type="application/javascript" src="/src/frontend/js/signInUp.js"></script>
+<script type="application/javascript" src="/src/frontend/js/shfaqePopUpWindows.js"></script>
+<script type="application/javascript" src="/src/frontend/js/shfaqePopUpKriterin.js"></script>
+<script type="application/javascript" src="/src/frontend/js/shfaqePopUpSiguria.js"></script>
+<script type="application/javascript" src="/src/frontend/js/shfaqeProblemetTeknikePopUp.js"></script>
 </html>
