@@ -128,7 +128,7 @@
                                                                                                  aria-hidden="true"></i></a>
         </div>
         <div class="grid-item-button">
-            <a class="neon-button"><i class="fa fa-question" title="Ndihmë" aria-hidden="true"></i></a>
+            <a class="neon-button"><i class="fa fa-question" title="Ndihmë" aria-hidden="true" onclick="shfaqeNdihmenPopUp()"></i></a>
         </div>
     </div>
     <p>Created with <i class="fa fa-heart"></i> by <a><strong>Blerina,Blerta,Arbresha</strong></a></p>
@@ -204,7 +204,7 @@
                     </ul>
                 </li>
             </ol>
-            <table cellspacing="5px" cellpadding="2px">
+            <table style=" border-color: #ba24c2">
                 <tr>
                     <p style=" color:purple; border:outset #d43ddb; border-radius:5px; text-align: center; font-size: 20px;">
                         <strong>Veprimet</strong></p>
@@ -215,14 +215,14 @@
                     <th>Perulja</th>
                 </tr>
                 <tr>
-                    <td style="background-color: #edbef1">Pas konfirmimit te emailit askush nuk do jet ne gjendje ta di kush jeni ju (Perveq autoret e
+                    <td style="background-color: #edbef1; border-color: #ba24c2">Pas konfirmimit te emailit askush nuk do jet ne gjendje ta di kush jeni ju (Perveq autoret e
                         kesaj webfaqe)
                     </td>
-                    <td style="background-color: #edbef1">Nese studenti perdor fjal banale atehere ai student do te
+                    <td style="background-color: #edbef1; border-color: #ba24c2">Nese studenti perdor fjal banale atehere ai student do te
                         <mark>prejashtrohet</mark>
                         nga faqja
                     </td>
-                    <td style="background-color: #edbef1">Studentit nuk i lejohet perulja ku ai student to te
+                    <td style="background-color: #edbef1; border-color: #ba24c2">Studentit nuk i lejohet perulja ku ai student to te
                         <mark>prejashtrohet</mark>
                         nga webfaqja
                     </td>
@@ -447,6 +447,85 @@ height: 1000px; overflow: auto">
     </div>
 
 </div>
+<div  id="containerNdihmaId" style="display: none; visibility: hidden; width: 1000px; overflow: auto">
+    <div class="butonin-mbylle">
+        <a class="neon-button">
+            <i class="fa fa-window-close-o" onclick="mbylleNdihmenPopUp()"></i>
+        </a>
+        </div>
+    <div>
+        <h2>Ndihmë</h2>
+
+
+
+        <table style="width:100% ;border: 1px solid black;
+               border-radius: 10px;
+               padding: 5px ; ">
+            <caption>Pyetje</caption>
+            <tr>
+                <th style="background-color:lightpink"; > Pyetje të studentave</th>
+                <th style="background-color:papayawhip;";>Pyetje të profesorave</th>
+                <th style="background-color:lightcoral;";>Pyetje Gjenerale</th>
+            </tr>
+            <tr>
+                <td  style="background-color:#e5ccc9">A do të mbetem anonim?</td>
+                <td style="background-color:#e5ccc9"> Diskriminimi në faqe</td>
+                <td style="background-color:#e5ccc9">Menyra e shkalles se vlersimit</td>
+            </tr>
+            <tr>
+                <td style="background-color:#e5ccc9">Përse komenti im është fshirë?</td>
+                <td style="background-color:#e5ccc9">Si mund t'i fshij komentet negative?</td>
+                <td style="background-color:#e5ccc9">Probleme teknike</td>
+            </tr>
+            <tr>
+                <td style="background-color:#e5ccc9">Si mund ta shtoj një profesor të ri në listë</td>
+                <td style="background-color:#e5ccc9">Si mund te hap nje llogari?</td>
+                <td style="background-color:#e5ccc9">Kam harruar passwordi-n</td>
+            </tr>
+            <tr>
+                <td style="background-color:#e5ccc9">Si mund të kontaktoj me ju?</td>
+                <td style="background-color:#e5ccc9">Si e verifikon faqja qe komentet jane nga studentet?</td>
+                <td style="background-color:#e5ccc9">Infomata jo te sakta per profesoret</td>
+            </tr>
+            <tr>
+                <td style="background-color:#e5ccc9">Si mund ta editoj postin tim?</td>
+                <td style="background-color:#e5ccc9">Pse eshte emri im pa leje ne faqe?</td>
+                <td style="background-color:#e5ccc9">Informata jo te sakta per studentet</td>
+            </tr>
+            <tr>
+                <td style="background-color:#e5ccc9">Si mund ta fshij komentin tim?</td>
+                <td style="background-color:#e5ccc9">Si mund ta largoj emrin tim nga review?</td>
+                <td style="background-color:#e5ccc9">Perdorimi i fjaleve banale</td>
+            </tr>
+            <tr>
+                <td style="background-color:#e5ccc9">Si mund ta bej report ndonje koment?</td>
+                <td style="background-color:#e5ccc9">Informata jo te sakta</td>
+                <td style="background-color:#e5ccc9">Shperndarja e informatave me pale te trete</td>
+            </tr>
+        </table>
+        <p>3.A ishin informatat e kërkuara?</p>
+        <form action="/action_page.php" style="color: black ; overflow: auto; background-color: #e88bee;border-radius: 12px;">
+            <input type="radio" id="po" name="Informata" >
+            <label for="po">Po</label><br>
+            <input type="radio" id="jo" name="Informata" >
+            <label for="jo">Jo</label><br>
+            <input type="radio" id="Pjeserisht" name="Pjeserisht" >
+            <label for="Pjeserisht">Pjeserisht</label>
+        </form>
+        <p>2.Keni nevojë për informata shtese</p>
+        <form action="/action_page.php" style="color: black; overflow: auto; background-color: #e88bee;border-radius: 12px;">
+            <input type="checkbox" id="po1" >
+            <label for="po"> Po</label><br>
+            <input type="checkbox" id="jo1" >
+            <label for="jo">Jo</label><br>
+            <input type="checkbox" id="Pyetje" >
+            <label for="Pyetje"> Pyetje tjera</label><br><br>
+            <input type="submit" value="Submit" required>
+        </form>
+
+    </div>
+    </div>
+
 
 </body>
 <script type="application/javascript" src="/src/frontend/js/bubbleCanvas.js"></script>
@@ -455,4 +534,5 @@ height: 1000px; overflow: auto">
 <script type="application/javascript" src="/src/frontend/js/shfaqePopUpKriterin.js"></script>
 <script type="application/javascript" src="/src/frontend/js/shfaqePopUpSiguria.js"></script>
 <script type="application/javascript" src="/src/frontend/js/shfaqeProblemetTeknikePopUp.js"></script>
+<script type="application/javascript" src="/src/frontend/js/shfaqeNdihmenPopUp.js"></script>
 </html>
