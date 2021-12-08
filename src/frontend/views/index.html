@@ -47,33 +47,33 @@
         <div class="container-login-formulary">
             <div class="container-login" id="containerLoginId">
                 <div class="form-container sign-up-container">
-                    <form action="#">
+                    <form action="signUp" method="post">
                         <header>Hapeni një llogari të re</header>
                         <div class="form-group">
                             <a class="fa fa-user"></a>
-                            <input class="my-input" type="text" placeholder="Emri i përdoruesit" id="usernameId"
+                            <input class="my-input" type="text" placeholder="Emri i përdoruesit" name="EmriPerdoruesi" id="usernameId"
                                    required>
                         </div>
                         <div class="form-group">
                             <a class="fa fa-envelope"></a>
-                            <input class="my-input" type="text" placeholder="Imaili" id="imailiId" required>
+                            <input class="my-input" type="text" placeholder="Imaili" name="EmailPerdoruesit" id="imailiId" required>
                         </div>
                         <div class="form-group">
                             <a class="fa fa-lock"></a>
-                            <input class="my-input" type="text" placeholder="Fjalëkalimi" id="passwordId" required>
+                            <input class="my-input" type="password" placeholder="Fjalëkalimi" name="PasvordiPerdoruesit" id="passwordId" required>
                         </div>
                         <button>Regjistrohu</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
-                    <form action="#">
+                    <form action="signIn" method="post">
                         <div class="form-group">
                             <a class="fa fa-envelope"></a>
-                            <input class="my-input" placeholder="Imaili" type="text" id="imailiLoginId" required>
+                            <input class="my-input" placeholder="Imaili" type="text" name="EmailPerdorus" id="imailiLoginId" required>
                         </div>
                         <div class="form-group">
                             <a class="fa fa-lock"></a>
-                            <input class="my-input" placeholder="Fjalëkalimi" type="text" id="passwordLoginId" required>
+                            <input class="my-input" placeholder="Fjalëkalimi" type="password" name="PasvordPerdorues" id="passwordLoginId" required>
                         </div>
                         <a href="#">Keni harruar fjalëkalimin tuaj</a>
                         <button>Hyni</button>
@@ -146,27 +146,26 @@
         <div class="kontakt-image-box">
             <div class="kontakt-image-box-dy">
                 <div class="kontakti-image-box-tre">
-                    <img class="logo-kontakt-popup" alt="Logo Rrezo" src="/src/frontend/images/logoRrezo.jpg">
+                    <img class="logo-kontakt-popup" alt="Logo Rrezo" src="../images/logoRrezo.jpg">
                 </div>
             </div>
         </div>
-        <form action="#">
+        <form action="pytMesazh" method="post">
             <div class="teme">Na dërgoni një mesazhë</div>
             <div class="kontakt-input-box">
-                <input class="kontakt-input-fushe" type="text" id="plotsimiEmriId" required>
+                <input class="kontakt-input-fushe" type="text"  name="plotsimiEmri" id="plotsimiEmriId" required>
                 <label class="kontakt-label">Shkruaj emrin tënd</label>
             </div>
             <div class="kontakt-input-box">
-                <input class="kontakt-input-fushe" type="text" id="plotsimiImelliId" required>
+                <input class="kontakt-input-fushe" type="text"  name="plotsimEmail" id="plotsimiImelliId" required>
                 <label class="kontakt-label">Shkruajni imellën tuaj</label>
             </div>
             <div class="kontakt-mesazhe-box">
-                <textarea class="kontakti-siperfaqja-tekstit" id="plotsimiTekstitId"></textarea>
+                <textarea class="kontakti-siperfaqja-tekstit"  name="plotsimTeksti" id="plotsimiTekstitId" ></textarea>
                 <label class="mesazh-box-label">Shkruani mesazhin tuaj</label>
             </div>
             <div class="kontakt-input-box">
-                <input class="kontakt-input-fushe" type="submit" id="kontaktInputFusheId" value="Dërgoje mesazhin"
-                       onclick="dergojeMesazhin()">
+                <input class="kontakt-input-fushe" type="submit" id="kontaktInputFusheId" value="Dërgoje mesazhin">
             </div>
         </form>
     </div>
@@ -528,11 +527,11 @@ height: 1000px; overflow: auto">
 
 
 </body>
-<script type="application/javascript" src="/src/frontend/js/bubbleCanvas.js"></script>
-<script type="application/javascript" src="/src/frontend/js/signInUp.js"></script>
-<script type="application/javascript" src="/src/frontend/js/shfaqePopUpWindows.js"></script>
-<script type="application/javascript" src="/src/frontend/js/shfaqePopUpKriterin.js"></script>
-<script type="application/javascript" src="/src/frontend/js/shfaqePopUpSiguria.js"></script>
-<script type="application/javascript" src="/src/frontend/js/shfaqeProblemetTeknikePopUp.js"></script>
-<script type="application/javascript" src="/src/frontend/js/shfaqeNdihmenPopUp.js"></script>
+<script type="application/javascript" src="../js/bubbleCanvas.js"></script>
+<script type="application/javascript" src="../js/signInUp.js"></script>
+<script type="application/javascript" src="../js/shfaqePopUpWindows.js"></script>
+<script type="application/javascript" src="../js/shfaqePopUpKriterin.js"></script>
+<script type="application/javascript" src="../js/shfaqePopUpSiguria.js"></script>
+<script type="application/javascript" src="../js/shfaqeProblemetTeknikePopUp.js"></script>
+<script type="application/javascript" src="../js/shfaqeNdihmenPopUp.js"></script>
 </html>

@@ -22,13 +22,3 @@ function mbylleKontaktinPopUp(){
     containerLoginId.style.display="block";
     containerLoginId.style.visibility="visible";
 }
-function dergojeMesazhin(){
-    let plotsimiEmriId=document.getElementById("plotsimiEmriId");
-    let plotsimiImelliId=document.getElementById("plotsimiImelliId");
-    let plotsimiTekstitId=document.getElementById("plotsimiTekstitId");
-
-    if(plotsimiTekstitId.value && plotsimiImelliId.value && plotsimiTekstitId.value ){
-        alert("janeplotsuartegjithafushat");
-    }
-
-}
