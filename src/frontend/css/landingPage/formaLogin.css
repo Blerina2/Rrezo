@@ -1,7 +1,7 @@
 .kontakt-popup-item  .teme{
     font-size: 22px;
     font-weight: 500;
-    color: #ba24c2;
+    color: var(--clr-neon-mshelt);
 }
 .kontakt-popup-item form{
     width:40%;
@@ -28,14 +28,14 @@
 }
 .kontakt-popup-item .kontakt-input-box .kontakt-input-fushe:focus,
 .kontakt-popup-item .kontakt-input-box .kontakt-input-fushe:valid{
-    border-color: #ba24c2;
+    border-color: var(--clr-neon-mshelt);
     background-color: white;
 }
 .kontakt-popup-item .kontakt-input-box .kontakt-label {
     position: absolute;
     left:18px;
     top:50%;
-    color: #ba24c2;
+    color: var(--clr-neon-mshelt);
     font-size: 15px;
     pointer-events: none;
     transform: translateY(-50%);
@@ -45,7 +45,7 @@
 .kontakt-popup-item .kontakt-input-box .kontakt-input-fushe:valid ~ label{
     top:0;
     left:12px;
-    color:#ba24c2;
+    color:var(--clr-neon-mshelt);
     background: white;
 }
 .kontakt-mesazhe-box{
@@ -67,26 +67,26 @@
 .mesazh-box-label{
     position: absolute;
     font-size: 14px;
-    color: #ba24c2;
+    color:var(--clr-neon-mshelt);
     left:18px;
     top:6px;
     pointer-events:none;
     transition: all 0.3s ease;
 }
 textarea{
-    border-color: #ba24c2;
+    border-color: var(--clr-neon-mshelt);
     background-color: white;
 }
 .kontakti-siperfaqja-tekstit:focus ~ .mesazh-box-label{
     left: 12px;
     top: -14px;
-    color:#ba24c2;
+    color:var(--clr-neon-mshelt);
     background: white;
     font-size: 15px;
 }
 #kontaktInputFusheId{
     color: white;
-    background-color: #ba24c2;
+    background-color: var(--clr-neon-mshelt);
     padding-left: 0;
     font-size: 18px;
     font-weight: 500;
@@ -95,7 +95,7 @@ textarea{
     transition: all;
 }
 #kontaktInputFusheId:hover{
-    background-color:#d43ddb;
+    background-color:var(--clr-neon-zi);
 }
 .grid-container-kontakt-popup.show{
     visibility: visible;

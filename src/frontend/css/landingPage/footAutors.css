@@ -15,10 +15,10 @@ footer p {
 }
 
 footer a {
-    color: #f046ff;
+    color: var(--clr-neon-light);
     text-decoration: none;
 }
 
 footer i {
-    color: purple;
+    color: var(--clr-purple);
 }

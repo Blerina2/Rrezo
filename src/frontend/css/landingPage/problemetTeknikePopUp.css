@@ -6,8 +6,8 @@
     background: #ffe1ff;
     padding: 10px 10px 70px 10px;
     border-radius: 12px;
-    -webkit-box-shadow: 0px 10px 49px -14px #FF10e8;
-    -moz-box-shadow: 0px 10px 49px -14px #FF10e8;
+    -webkit-box-shadow: 0px 10px 49px -14px var(--clr-neon-qelt);
+    -moz-box-shadow: 0px 10px 49px -14px  var(--clr-neon-qelt);
     box-shadow: 0px 10px 109px -14px black;
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,7 +22,7 @@
 }
 .container-problemet-teknike-popup-front .details i{
     font-size: 30px;
-    color: #FF10e8;
+    color:  var(--clr-neon-qelt);
     margin: 1px;
     box-shadow: 0px 10px 109px -14px white;
 }

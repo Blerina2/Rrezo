@@ -13,9 +13,9 @@
     background: white;
     border-radius: 12px;
     margin: 0 20px;
-    -webkit-box-shadow: 0px 10px 49px -14px #FF10e8;
-    -moz-box-shadow: 0px 10px 49px -14px #FF10e8;
-    box-shadow: 0px 10px 49px -14px #FF10e8;
+    -webkit-box-shadow: 0px 10px 49px -14px var(--clr-neon-qelt);
+    -moz-box-shadow: 0px 10px 49px -14px var(--clr-neon-qelt);
+    box-shadow: 0px 10px 49px -14px var(--clr-neon-qelt);
     font-family: 'Montserrat', sans-serif;
 }
 .kontakt-popup-item{
@@ -30,8 +30,8 @@
     display:flex;
     border-radius: 12px;
     background: black;
-    -webkit-box-shadow: 0px 10px 49px -14px #FF10e8;
-    -moz-box-shadow: 0px 10px 49px -14px #FF10e8;
+    -webkit-box-shadow: 0px 10px 49px -14px var(--clr-neon-qelt);
+    -moz-box-shadow: 0px 10px 49px -14px var(--clr-neon-qelt);
     box-shadow: 0px 10px 109px -14px black;
     margin-left: 50px;
     margin-right: 50px;
@@ -45,7 +45,7 @@
 .kontakti-image-box-tre{
     display: flex;
     border-radius: 12px;
-    background: #FF10e8;
+    background: var(--clr-neon-qelt);
     margin-left: 9px;
 }
 .logo-kontakt-popup{
