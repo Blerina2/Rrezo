@@ -104,7 +104,29 @@ app.get("/dashboard",(request,response)=>{
 
 
 
+
 });
+
+
+app.get("/logout",(request,response)=>{
+    request.session.loggedin = false;
+    response.redirect("/index");
+    response.end();
+});
+
+app.get("/profili",(request,response)=> {
+        if (request.session.loggedin) {
+            response.sendFile(path.join(__dirname + "/frontend/views/profili.html"));
+        } else {
+            response.redirect("/index");
+            response.end();
+        }
+    });
+
+
+
+
+
 
 //http://localhost:3000/index
 const port=3000;
