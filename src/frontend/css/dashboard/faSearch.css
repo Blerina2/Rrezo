@@ -1,0 +1,21 @@
+.fa-search{
+    color: white;
+    margin-top: 10px;
+    margin-left: -14px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.fa-search:hover,
+.fa-search:focus{
+    color: white;
+    text-shadow: none;
+}
+.fa-search:hover::before,
+.fa-search:focus::before{
+    opacity: 1;
+}
+.fa-search:hover::after,
+.fa-search:focus::after{
+    opacity: 1;
+}

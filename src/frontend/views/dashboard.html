@@ -17,6 +17,12 @@
     <link rel="stylesheet" type="text/css" href="../css/dashboard/faStarHalfAlt.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/farFaTired.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/dashboardFooter.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/gridContainerMenu.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faNewspaper.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faChartLine.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faHireAHelper.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faSearch.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faVoteYea.css">
 
 </head>
 <body>
@@ -45,29 +51,70 @@
 <!--    </div>-->
 <!--</header>-->
 
-<footer id="footergridkontinierbuttons">
-    <div class="grid-container-buttons">
-<div class="grid-item-button">
-<a class="neon-button" href="" target="_blank" aria-hidden="true" title="Rating">
-<i class="fa fa-star-half-alt"></i>
-</a>
-</div>
-        <div class="grid-item-button">
-            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Feedback">
-                <i class="fa fa-comments"></i>
-            </a>
+
+<div class="grid-container-menu" id="menuButtonId">
+    <div class="grid-container-menu-item">
+        <div class="container">
+            <div id="showMenuItemsId" class="diamond">
+                <div id="mainRotCorrect " class="rotCorrect">
+                    <p class="rrezoMenuButton" title="Menu" onclick="showMenu()">Rrezo</p>
+                </div>
+            </div>
+            <div id="nav1" class="nav nav1 diamond small">
+                <div class="rotCorrect">
+                    <i title="Lajmet" class="fas fa-newspaper" onclick="" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="nav2" class="nav nav2 diamond small">
+                <div class="rotCorrect">
+                    <i title="Statistika" class="fas fa-chart-line" onclick="" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="nav3" class="nav nav3 diamond small">
+                <div class="rotCorrect">
+                    <i title="Ndihmë" class="fab fa-hire-a-helper" onclick="" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="nav4" class="nav nav4 diamond small">
+                <div class="rotCorrect">
+                    <i title="Kërko" class="fas fa-search" onclick="" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
-        <div class="grid-item-button">
-            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Ankesat">
-                <i class="far fa-tired"></i>
-            </a>
+        <div id="nav5" class="nav nav5 diamond small">
+            <div class="rotCorrect">
+                <i title="Voto për prof" class="fas fa-vote-yea" onclick="" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
-    <p>Krijuar me <i class="far fa-grin-hearts"></i> nga <a>Albulena, Blerta, Blerina, Arbresha</a></p>
-</footer>
+    </div>
+</div>
+
+
+<!--<footer id="footergridkontinierbuttons">-->
+<!--    <div class="grid-container-buttons">-->
+<!--<div class="grid-item-button">-->
+<!--<a class="neon-button" href="" target="_blank" aria-hidden="true" title="Rating">-->
+<!--<i class="fa fa-star-half-alt"></i>-->
+<!--</a>-->
+<!--</div>-->
+<!--        <div class="grid-item-button">-->
+<!--            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Feedback">-->
+<!--                <i class="fa fa-comments"></i>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--        <div class="grid-item-button">-->
+<!--            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Ankesat">-->
+<!--                <i class="far fa-tired"></i>-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <p>Krijuar me <i class="far fa-grin-hearts"></i> nga <a>Albulena, Blerta, Blerina, Arbresha</a></p>-->
+<!--</footer>-->
 
 <!--<script type="application/javascript" src="../js/dashboard/matrixEffect.js"></script>-->
 <!--<script type="application/javascript" src="../js/dashboard/ndryshoNgjyren.js"></script>-->
 <!--<script type="application/javascript" src="../js/dashboard/shaqePopupPerdoruesit.js"></script>-->
+<script type="application/javascript" src="../js/dashboard/showMenu.js"></script>
 </body>
 </html>

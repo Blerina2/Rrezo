@@ -1,0 +1,21 @@
+.fa-chart-line{
+    color: white;
+    margin-top: 10px;
+    margin-left: -14px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.fa-chart-line:hover,
+.fa-chart-line:focus{
+    color: white;
+    text-shadow: none;
+}
+.fa-chart-line:hover::before,
+.fa-chart-line:focus::before{
+    opacity: 1;
+}
+.fa-chart-line:hover::after,
+.fa-chart-line:focus::after{
+    opacity: 1;
+}

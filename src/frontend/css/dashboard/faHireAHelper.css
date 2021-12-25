@@ -1,0 +1,21 @@
+.fa-hire-a-helper{
+    color: white;
+    margin-top: 10px;
+    margin-left: -14px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.fa-hire-a-helper:hover,
+.fa-hire-a-helper:focus{
+    color: white;
+    text-shadow: none;
+}
+.fa-hire-a-helper:hover::before,
+.fa-hire-a-helper:focus::before{
+    opacity: 1;
+}
+.fa-hire-a-helper:hover::after,
+.fa-hire-a-helper:focus::after{
+    opacity: 1;
+}
