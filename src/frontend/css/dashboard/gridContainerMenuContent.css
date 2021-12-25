@@ -1,0 +1,14 @@
+.grid-container-menu-content {
+    grid-column: 2 / span 3;
+    float: right;
+    width: 70%;
+    height: 500px;
+    margin-right: 3px;
+    background: transparent;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    border: var(--clr-neon) 0.15em solid;
+    visibility: hidden;
+    display: none;
+}
+
+
