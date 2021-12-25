@@ -1,0 +1,22 @@
+.fa-tired{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+.fa-tired:hover,
+.fa-tired:focus{
+    color: white;
+    text-shadow: none;
+
+}
+.fa-tired:hover::before,
+.fa-tired:focus::before{
+    opacity: 1;
+
+}
+.fa-tired:hover::after,
+.fa-tired:focus::after{
+    opacity: 1;
+
+}

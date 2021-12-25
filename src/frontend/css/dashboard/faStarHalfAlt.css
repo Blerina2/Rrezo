@@ -1,0 +1,21 @@
+.fa-star-half-alt{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+.fa-star-half-alt:hover,
+.fa-star-half-alt:focus{
+    color: white;
+    text-shadow: none;
+}
+.fa-star-half-alt:hover::before,
+.fa-star-half-alt:focus::before{
+    opacity: 1;
+
+}
+.fa-star-half-alt:hover::after,
+.fa-star-half-alt:focus::after{
+    opacity: 1;
+
+}
