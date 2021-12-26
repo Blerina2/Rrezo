@@ -7,32 +7,35 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://emoji-css.afeld.me/emoji.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/purpleTheme.css">
-    <link rel="stylesheet" type="text/css" href="../css/dashboard/header.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/dashBoard.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/neonButton.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/gridContainerMenu.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/profiliPerdoruesit.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/footergridkontinierbuttons.css">
-    <link type="text/css" rel="stylesheet" href="../css/landingPage/neonButton.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/faComments.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/fa-grin-hearts.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/faStarHalfAlt.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/farFaTired.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/dashboardFooter.css">
-    <link rel="stylesheet" type="text/css" href="../css/dashboard/gridContainerMenu.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/faNewspaper.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/faChartLine.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/faHireAHelper.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/faSearch.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/faVoteYea.css">
-    <link rel="stylesheet" type="text/css" href="../css/dashboard/gridContainerMenuContent.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/newspaper.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/statistika.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/ndim.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/kerko.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/voto.css">
 
 </head>
 <body>
-<!--<canvas id="matrixId" ></canvas>-->
+<!--<canvas id="matrixId"></canvas>-->
 <!--<header id="headerDashboard">-->
-<!--        <div id="changeThemes">-->
-<!--            <img src="../images/logoRrezo.jpg" id="logoRrezoDashboard" alt="logo Rrezo"  onclick="ndryshoNgjyren()">-->
-<!--        </div>-->
+<!--    <div id="changeThemes">-->
+<!--        <img src="../images/logoRrezo.jpg" id="logoRrezoDashboard" alt="logo Rrezo" onclick="ndryshoNgjyren()">-->
+<!--    </div>-->
 <!--    <div class="profil-container" title="Profili Perdoruesit" onclick="shfaqePopupPerdoruesit()">-->
 <!--        <div class="kartelaProfili">-->
 <!--            <div class="unazaProfilitBg">-->
@@ -47,73 +50,101 @@
 <!--                <input class="shkyqProfilin" type="submit" value="Shkyc">-->
 <!--            </form>-->
 <!--            <form action="profili" method="get">-->
-<!--            <input class="editoProfilin" type="submit" value="Redakto profilin">-->
+<!--                <input class="editoProfilin" type="submit" value="Redakto profilin">-->
 <!--            </form>-->
 <!--        </div>-->
 <!--    </div>-->
 <!--</header>-->
 
 
-<div class="grid-container-menu" id="menuButtonId">
-    <div class="grid-container-menu-item">
-        <div class="container">
-            <div id="showMenuItemsId" class="diamond">
-                <div id="mainRotCorrect " class="rotCorrect">
-                    <p class="rrezoMenuButton" title="Menu" onclick="showMenu()">Rrezo</p>
-                </div>
-            </div>
-            <div id="nav1" class="nav nav1 diamond small">
-                <div class="rotCorrect">
-                    <i title="Lajmet" class="fas fa-newspaper" onclick="showNewspaper()" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div id="nav2" class="nav nav2 diamond small">
-                <div class="rotCorrect">
-                    <i title="Statistika" class="fas fa-chart-line" onclick="" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div id="nav3" class="nav nav3 diamond small">
-                <div class="rotCorrect">
-                    <i title="Ndihmë" class="fab fa-hire-a-helper" onclick="" aria-hidden="true"></i>
-                </div>
-            </div>
-            <div id="nav4" class="nav nav4 diamond small">
-                <div class="rotCorrect">
-                    <i title="Kërko" class="fas fa-search" onclick="" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-        <div id="nav5" class="nav nav5 diamond small">
-            <div class="rotCorrect">
-                <i title="Voto për prof" class="fas fa-vote-yea" onclick="" aria-hidden="true"></i>
-            </div>
-        </div>
-    </div>
+<!--<div class="grid-container-menu" id="menuButtonId">-->
+<!--    <div class="grid-container-menu-item">-->
+<!--        <div class="container">-->
+<!--            <div id="showMenuItemsId" class="diamond">-->
+<!--                <div id="mainRotCorrect " class="rotCorrect">-->
+<!--                    <p class="rrezoMenuButton" title="Menu" onclick="showMenu()">Rrezo</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div id="nav1" class="nav nav1 diamond small">-->
+<!--                <div class="rotCorrect">-->
+<!--                    <i title="Lajmet" class="fas fa-newspaper" onclick="showNewspaper()" aria-hidden="true"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div id="nav2" class="nav nav2 diamond small">-->
+<!--                <div class="rotCorrect">-->
+<!--                    <i title="Statistika" class="fas fa-chart-line" onclick="showStatistikat()" aria-hidden="true"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div id="nav3" class="nav nav3 diamond small">-->
+<!--                <div class="rotCorrect">-->
+<!--                    <i title="Ndihmë" class="fab fa-hire-a-helper" onclick="showNdim()" aria-hidden="true"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div id="nav4" class="nav nav4 diamond small">-->
+<!--                <div class="rotCorrect">-->
+<!--                    <i title="Kërko" class="fas fa-search" onclick="showKerko()" aria-hidden="true"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div id="nav5" class="nav nav5 diamond small">-->
+<!--            <div class="rotCorrect">-->
+<!--                <i title="Voto për prof" class="fas fa-vote-yea" onclick="showVoto()" aria-hidden="true"></i>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="grid-container-menu-content" id="gridContainerMenuContentId">
-            <div class="newspaper" id="newspaperId">
-                <div class="grid-container-newspaper">
-                        <div class="grid-item-newspaper">
+<!--    <div class="grid-container-menu-content" id="gridContainerMenuContentId">-->
+<!--&lt;!&ndash;        <div class="newspaper" id="newspaperId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="grid-container-newspaper">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="grid-item-newspaper">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h1>Lajmet Aktuale</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="statistika" id="statistikaId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="grid-container-statistika">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="grid-item-statistika">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h1>Popullariteti i Profesorave</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="pieChartStatistika" id="pieChartStatistikaId"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="ndim" id="ndimId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="grid-container-ndim">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="grid-item-ndim">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h1>Ndim</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
 
-                        </div>
-                </div>
-            </div>
-    </div>
+<!--&lt;!&ndash;        <div class="kerko" id="kerkoId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="grid-container-kerko">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="grid-item-kerko">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h1>Kerko</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div class="voto" id="votoId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="grid-container-voto">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="grid-item-voto">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h1>Voto profesorin</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--    </div>-->
 
 
-</div>
-
-
-
+<!--</div>-->
 
 
 <!--<footer id="footergridkontinierbuttons">-->
 <!--    <div class="grid-container-buttons">-->
-<!--<div class="grid-item-button">-->
-<!--<a class="neon-button" href="" target="_blank" aria-hidden="true" title="Rating">-->
-<!--<i class="fa fa-star-half-alt"></i>-->
-<!--</a>-->
-<!--</div>-->
+<!--        <div class="grid-item-button">-->
+<!--            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Rating">-->
+<!--                <i class="fa fa-star-half-alt"></i>-->
+<!--            </a>-->
+<!--        </div>-->
 <!--        <div class="grid-item-button">-->
 <!--            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Feedback">-->
 <!--                <i class="fa fa-comments"></i>-->
@@ -128,10 +159,17 @@
 <!--    <p>Krijuar me <i class="far fa-grin-hearts"></i> nga <a>Albulena, Blerta, Blerina, Arbresha</a></p>-->
 <!--</footer>-->
 
+
+<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
 <!--<script type="application/javascript" src="../js/dashboard/matrixEffect.js"></script>-->
 <!--<script type="application/javascript" src="../js/dashboard/ndryshoNgjyren.js"></script>-->
 <!--<script type="application/javascript" src="../js/dashboard/shaqePopupPerdoruesit.js"></script>-->
-<script type="application/javascript" src="../js/dashboard/showMenu.js"></script>
-<script type="application/javascript" src="../js/dashboard/showNewspaper.js"></script>
+<!--<script type="application/javascript" src="../js/dashboard/showMenu.js"></script>-->
+<!--<script type="application/javascript" src="../js/dashboard/showNewspaper.js"></script>-->
+<!--<script type="application/javascript" src="../js/dashboard/showStatistikat.js"></script>-->
+<!--<script type="application/javascript" src="../js/dashboard/showNdim.js"></script>-->
+<!--<script type="application/javascript" src="../js/dashboard/showKerko.js"></script>-->
+<!--<script type="application/javascript" src="../js/dashboard/showVoto.js"></script>-->
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 #headerDashboard{
-    /*visibility:hidden;*/
-    /*display: none;*/
+    visibility:hidden;
+    display: none;
     padding: 1em;
     overflow: hidden;
     height: 100px;

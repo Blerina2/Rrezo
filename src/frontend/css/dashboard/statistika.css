@@ -1,0 +1,37 @@
+.statistika{
+    visibility: hidden;
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 99%;
+}
+
+.grid-container-statistika{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),0 0 0.5em 0 var(--clr-neon);
+    border: var(--clr-neon) 0.15em solid;
+
+}
+
+.grid-item-statistika{
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 15px;
+    color: black;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),0 0 0.5em 0 var(--clr-neon);
+    border: var(--clr-neon) 1px solid;
+    overflow: hidden;
+}
+
+
+.pieChartStatistika{
+    align-items: center;
+
+}
+

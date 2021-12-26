@@ -1,0 +1,30 @@
+.ndim{
+    visibility: hidden;
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 99%;
+}
+
+.grid-container-ndim{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),0 0 0.5em 0 var(--clr-neon);
+    border: var(--clr-neon) 0.15em solid;
+
+}
+
+.grid-item-ndim{
+    width: inherit;
+    height: inherit;
+    background-color:transparent;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),0 0 0.5em 0 var(--clr-neon);
+    border: var(--clr-neon) 1px solid;
+    overflow: hidden;
+}

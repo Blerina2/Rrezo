@@ -42,6 +42,20 @@ const vizato = () => {
         kontekst.clearRect(0,0,canvas.width,canvas.height);
         canvas.style.display='none';
         canvas.style.visibility='none';
+
+        let footergridkontinierbuttons=document.getElementById('footergridkontinierbuttons');
+        footergridkontinierbuttons.style.display='block';
+        footergridkontinierbuttons.style.visibility='visible';
+
+        let headerDashboard=document.getElementById('headerDashboard');
+        headerDashboard.style.display='block';
+        headerDashboard.style.visibility='visible';
+
+        let menuButtonId= document.getElementById('menuButtonId');
+        menuButtonId.style.display='block';
+        menuButtonId.style.visibility='visible';
+
+
         const html=document.getElementsByTagName("html")[0];
         html.style.backgroundImage="url(../images/dashboardImagePurple.png)";
     }

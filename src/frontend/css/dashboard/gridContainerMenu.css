@@ -7,38 +7,38 @@
     grid-template-rows: 550px 100px;
     grid-gap: 10px;
     padding: 10px;
+
     /*visibility: hidden;*/
     /*display: none;*/
 }
+.grid-container-menu > div{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
 
 .grid-container-menu-item{
-    float: left;
+    float: right;
+    padding-left: 370px !important;
 }
 
-#mainRotCorrect{
-    overflow: hidden;
-    margin-left: 20px;
-    margin-top: 53px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    max-width: 90px;
+.grid-container-menu-content {
+    grid-column: 2 / span 3;
+    float: right;
+    height: 500px;
+    margin-right: 3px;
+    background: transparent;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    border: var(--clr-neon) 0.15em solid;
+    visibility: hidden;
+    display: none;
+    width: 800px;
 }
-.rotCorrect{
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    margin-left: 14px;
-    margin-top: 8px;
-}
-.rrezoMenuButton{
-    color: white;
-    margin-top: 43px;
-    margin-left: -40px;
-    letter-spacing: 3px;
-    font-size: 26px;
-    font-style: italic;
-    text-indent: 50px;
-    text-align: justify;
-}
+
+
 #showMenuItemsId{
     top: 350px;
     left: 100px;
@@ -126,3 +126,27 @@
     -webkit-transition: 0.5s;
 }
 
+#mainRotCorrect{
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 53px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    max-width: 90px;
+}
+.rotCorrect{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left: 14px;
+    margin-top: 8px;
+}
+.rrezoMenuButton{
+    color: white;
+    margin-top: 43px;
+    margin-left: -40px;
+    letter-spacing: 3px;
+    font-size: 26px;
+    font-style: italic;
+    text-indent: 50px;
+    text-align: justify;
+}
