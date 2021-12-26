@@ -6,7 +6,7 @@
     content: url("../../images/logoRrezo.jpg");
     filter: contrast(200%);
 }
-body{
-    background-color: black;
+html{
+    background-color: var(--clr-background-color);
     color: white;
 }

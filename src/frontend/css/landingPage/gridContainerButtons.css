@@ -1,12 +1,12 @@
 .grid-container-button {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-    background-color: black;
+    background-color: transparent;
     margin: auto;
     width: 90%;
-    padding: 20px;
+    /*padding: 20px;*/
 }
 .grid-item-button {
-    background-color: black;
+    background-color: transparent;
     text-align: center;
 }
