@@ -33,5 +33,24 @@ function showVoto() {
         gridContainerMenuContentId.style.display = 'none';
         gridContainerMenuContentId.style.visibility = 'hidden';
     }
+shfaqEmrateProfesorave()
+}
+
+function shfaqEmrateProfesorave(){
+    let profItem = document.getElementById('profItem');
+
+    if (profItem.querySelector("div")===null){
+        const emratProfesorave=["Marjan Dema", "Avni Rexhepi", "Enver Hamiti", "Sabrije Osmanaj",
+            "Isak Shabani", "Qamil Kabashi", "Dhurate Hyseni", "Vjosa Shatri", "Daline Vranovci", "Jeta Dobruna",
+        "Blend Arifaj", "Valon Veliu", "Dardan Shabani", "Gazmend Pula"];
+
+        for (let i = 0; i < emratProfesorave.length; i++) {
+            let data = "<div class=prof-Item-Dinamic draggable=true ondragstart=dragProf(event) " + "id=" + "profName" + i + "Id>" + emratProfesorave[i] + "</div>";
+            profItem.innerHTML += data;
+        }
+
+    }
+
+
 
 }

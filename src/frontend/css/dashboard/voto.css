@@ -1,6 +1,6 @@
 .voto{
-    /*visibility: hidden;*/
-    /*display: none;*/
+    visibility: hidden;
+    display: none;
     margin-left: 10px;
     margin-right: 10px;
     height: 99%;
@@ -42,6 +42,7 @@
     color: white;
     font-style: italic;
     border-radius: 12px;
+    margin-top: 40px;
 }
 .grid-item-voto-lesho-emoji{
     padding: 20px;
@@ -56,4 +57,27 @@
     border-radius: 15px;
     color: white;
     justify-self: right;
+}
+#dropAreaProf{
+    color: white;
+    font-style: italic;
+    height: 200px;
+    border: var(--clr-neon) 0.15em solid;
+    margin-top: 14px;
+    border-radius: 12px;
+}
+#dropAreaEmoji{
+    color: white;
+    font-style: italic;
+    height: 200px;
+    border: var(--clr-neon) 0.15em solid;
+    margin-top: 14px;
+    border-radius: 12px;
+}
+.prof-Item-Dinamic{
+    height: 28px;
+    font-size: 18px;
+    color: white;
+    font-style: italic;
+
 }

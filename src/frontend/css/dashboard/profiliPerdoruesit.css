@@ -83,7 +83,7 @@
 
 .shkyqProfilin {
     margin-top: 4px;
-    padding-left: 0px;
+    padding-left: 0;
     letter-spacing: 1px;
     background: transparent;
     color: white;
@@ -97,7 +97,7 @@
 
 .editoProfilin {
     margin: 4px;
-    padding-left: 0px;
+    padding-left: 0;
     letter-spacing: 1px;
     background: transparent;
     color: white;

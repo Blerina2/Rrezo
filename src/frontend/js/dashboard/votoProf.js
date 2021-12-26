@@ -25,3 +25,7 @@ function dergoVotimin(){
     alert("Keni derguar votimin");
 
 }
+function dragProf(ev) {
+    ev.dataTransfer.setData("Text", ev.target.id);
+
+}
