@@ -41,8 +41,7 @@ function shfaqEmrateProfesorave(){
 
     if (profItem.querySelector("div")===null){
         const emratProfesorave=["Marjan Dema", "Avni Rexhepi", "Enver Hamiti", "Sabrije Osmanaj",
-            "Isak Shabani", "Qamil Kabashi", "Dhurate Hyseni", "Vjosa Shatri", "Daline Vranovci", "Jeta Dobruna",
-        "Blend Arifaj", "Valon Veliu", "Dardan Shabani", "Gazmend Pula"];
+            "Isak Shabani", "Qamil Kabashi", "Dhurate Hyseni", "Vjosa Shatri", "Daline Vranovci", "Jeta Dobruna"];
 
         for (let i = 0; i < emratProfesorave.length; i++) {
             let data = "<div class=prof-Item-Dinamic draggable=true ondragstart=dragProf(event) " + "id=" + "profName" + i + "Id>" + emratProfesorave[i] + "</div>";

@@ -46,7 +46,7 @@
 }
 .grid-item-voto-lesho-emoji{
     padding: 20px;
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
 
 }
@@ -61,7 +61,7 @@
 #dropAreaProf{
     color: white;
     font-style: italic;
-    height: 200px;
+    height: 150px;
     border: var(--clr-neon) 0.15em solid;
     margin-top: 14px;
     border-radius: 12px;
@@ -69,7 +69,7 @@
 #dropAreaEmoji{
     color: white;
     font-style: italic;
-    height: 200px;
+    height: 150px;
     border: var(--clr-neon) 0.15em solid;
     margin-top: 14px;
     border-radius: 12px;

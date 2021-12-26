@@ -1,11 +1,11 @@
 .kontinier-emoji{
     display: grid;
     grid-template-rows: auto auto auto auto auto auto;
-    gap: 10px;
+    gap: 0;
 
 }
 .kontinier-emoji-item{
-    padding: 8px;
+    padding: 5px;
     cursor: move;
     background-color: transparent;
     border-radius: 15px;
