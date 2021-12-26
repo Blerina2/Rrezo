@@ -28,6 +28,8 @@
     <link rel="stylesheet" type="text/css" href="../css/dashboard/ndim.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/kerko.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/voto.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/kontinierEmojiVoto.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/dergoVotiminProfButton.css">
 
 </head>
 <body>
@@ -158,6 +160,63 @@
 <!--    </div>-->
 <!--    <p>Krijuar me <i class="far fa-grin-hearts"></i> nga <a>Albulena, Blerta, Blerina, Arbresha</a></p>-->
 <!--</footer>-->
+<div class="voto" id="votoId">
+    <div class="grid-item-voto-zgjidh-prof">
+        <div class="prof-item" id="profItem" ondrop="terheqeProf(event)" ondragover="leshoTerheqjenProf(event)"></div>
+    </div>
+
+    <div class="grid-item-voto-lesho-emoji">
+        <div id="dropAreaProf" ondrop="terheqeProf(event)" ondragover="leshoTerheqjenProf(event)">
+            <p>Emri i Profesorit</p>
+        </div>
+        <div id="dropAreaEmoji"ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+            <p>Emoji</p>
+        </div>
+    </div>
+
+        <div class="grid-item-voto-emoji">
+            <div class="kontinier-emoji">
+                <div class="kontinier-emoji-item" id="div-emoji-smiley-item" ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                    <i draggable="true" class="em em-smiley" aria-role="presentation" aria-label="SMILING FACE WITH OPEN MOUTH"
+                    id="emSmileyEmoji" ondragstart="drag(event)">
+                    </i>
+                </div>
+                <div class="kontinier-emoji-item" id="div-emoji-slightly-smiley-item" ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                    <i draggable="true" class="em em-slightly_smiling_face" aria-role="presentation" aria-label="SLIGHTLY SMILING FACE"
+                       id="emSlightlySmileyEmoji" ondragstart="drag(event)">
+                    </i>
+                </div>
+                <div class="kontinier-emoji-item" id="div-emoji-slightly-frowning-item" ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                    <i draggable="true" class="em em-slightly_frowning_face" aria-role="presentation" aria-label="SLIGHTLY FROWNING FACE"
+                       id="emSlightlyFrowningEmoji" ondragstart="drag(event)">
+                    </i>
+                </div>
+
+                <div class="kontinier-emoji-item" id="div-emoji-expressionless-item" ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                    <i draggable="true" class="em em-expressionless" aria-role="presentation" aria-label="EXPRESSIONLESS FACE"
+                       id="emExpressionlessEmoji" ondragstart="drag(event)">
+                    </i>
+                </div>
+
+                <div class="kontinier-emoji-item" id="div-emoji-no_mouth-item" ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                    <i draggable="true" class="em em-no_mouth" aria-role="presentation" aria-label="FACE WITHOUT MOUTH"
+                       id="emNo_MouthEmoji" ondragstart="drag(event)">
+                    </i>
+                </div>
+                <div class="kontinier-emoji-item">
+                    <button class="glow-on-hover" type="button" onclick="dergoVotimin()">
+                        Dergo votimin
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+</div>
 
 
 <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
@@ -170,6 +229,7 @@
 <!--<script type="application/javascript" src="../js/dashboard/showNdim.js"></script>-->
 <!--<script type="application/javascript" src="../js/dashboard/showKerko.js"></script>-->
 <!--<script type="application/javascript" src="../js/dashboard/showVoto.js"></script>-->
+<script type="application/javascript" src="../js/dashboard/votoProf.js"></script>
 
 </body>
 </html>
