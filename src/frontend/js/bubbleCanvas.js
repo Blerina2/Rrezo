@@ -71,7 +71,13 @@ function Run() {
             let a = ((20 - Math.abs(20 - (30 - Math.abs(20 - (Math.abs(50 - bubble[3])))))) * 0.05);
 
             //ctx.strokeStyle = "rgba(" + bubble[2] + "," + a + ")"
-            ctx.strokeStyle = "rgba(255, 20, 189," + a + ")"
+            if (getComputedStyle(document.documentElement).getPropertyValue("--clr-neon") !== "hsl(317 100% 54%)" ){
+
+                ctx.strokeStyle = "rgba(20, 130, 255," + a + ")"
+            }else{
+                ctx.strokeStyle = "rgba(255, 20, 189," + a + ")"
+            }
+
             ctx.stroke();
 
         } else {

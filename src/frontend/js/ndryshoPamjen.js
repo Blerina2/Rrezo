@@ -1,19 +1,24 @@
 function ndryshoPamjen(){
-    debugger;
-    if(getComputedStyle(document.documentElement).getPropertyValue("--clr-background-color") === "black"  ){
+    if(getComputedStyle(document.documentElement).getPropertyValue("--clr-neon") === "hsl(317 100% 54%)"  ){
         document.documentElement.style.setProperty('--clr-neon', 'hsl(212,100%,54%)');
         document.documentElement.style.setProperty('--clr-bg', 'hsl(162, 21%, 16%)');
         document.documentElement.style.setProperty('--clr-neon-light', 'hsl(223, 100%, 64%)');
-        document.documentElement.style.setProperty('--clr-purple', 'hsl(198, 66%, 59%)');
-        document.documentElement.style.setProperty('--clr-neon-qelt', '');
-        document.documentElement.style.setProperty('--clr-neon-mshelt', '');
-        document.documentElement.style.setProperty('--clr-neon-zi', '');
-        document.documentElement.style.setProperty('--clr-coral', '');
-        document.documentElement.style.setProperty('--clr-pink-bardh', '');
-        document.documentElement.style.setProperty('--clr-pink-qelt', '');
-        document.documentElement.style.setProperty('--clr-lekure', '');
-        document.documentElement.style.setProperty('--clr-kuq-qelt', '');
-        document.documentElement.style.setProperty('--clr-sdi', '');
+        document.documentElement.style.setProperty('--clr-purple', 'hsl(195,48%,46%)');
+        document.documentElement.style.setProperty('--clr-neon-qelt', 'hsl(202,93%,63%)');
+        document.documentElement.style.setProperty('--clr-neon-mshelt', 'hsl(212,81%,29%)');
+        document.documentElement.style.setProperty('--clr-neon-zi', 'hsl(195,61%,32%)');
+        document.documentElement.style.setProperty('--clr-coral', 'hsl(204,54%,61%)');
+        document.documentElement.style.setProperty('--clr-pink-bardh', 'hsl(188,47%,76%)');
+        document.documentElement.style.setProperty('--clr-pink-qelt', 'hsl(198,84%,75%)');
+        document.documentElement.style.setProperty('--clr-lekure', 'hsl(193,31%,44%)');
+        document.documentElement.style.setProperty('--clr-kuq-qelt', 'hsl(231,62%,58%)');
+        document.documentElement.style.setProperty('--clr-sdi', 'hsl(228,54%,62%)');
+
+        let curentImage = getComputedStyle(document.getElementById("earthId")).getPropertyValue("background-image");
+        if(curentImage.includes("earthPink.jpg")){
+            document.getElementById("earthId").style.backgroundImage = "url('../images/earthBlue.jpg')";
+        }
+
 
     } else {
         document.documentElement.style.setProperty('--clr-neon', 'hsl(317 100% 54%)');
@@ -30,6 +35,10 @@ function ndryshoPamjen(){
         document.documentElement.style.setProperty('--clr-kuq-qelt', '#e5ccc9');
         document.documentElement.style.setProperty('--clr-sdi', '#e88bee');
 
+        let curentImage = getComputedStyle(document.getElementById("earthId")).getPropertyValue("background-image");
+        if(curentImage.includes("earthBlue.jpg") ){
+            document.getElementById("earthId").style.backgroundImage = "url('../images/earthPink.jpg')";
+        }
     }
 
 }
