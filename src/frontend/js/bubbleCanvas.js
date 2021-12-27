@@ -72,7 +72,6 @@ function Run() {
 
             //ctx.strokeStyle = "rgba(" + bubble[2] + "," + a + ")"
             if (getComputedStyle(document.documentElement).getPropertyValue("--clr-neon") !== "hsl(317 100% 54%)" ){
-
                 ctx.strokeStyle = "rgba(20, 130, 255," + a + ")"
             }else{
                 ctx.strokeStyle = "rgba(255, 20, 189," + a + ")"
