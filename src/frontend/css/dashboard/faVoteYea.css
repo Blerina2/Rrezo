@@ -1,0 +1,21 @@
+.fa-vote-yea{
+    color: white;
+    margin-top: 10px;
+    margin-left: -14px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.fa-vote-yea:hover,
+.fa-vote-yea:focus{
+    color: white;
+    text-shadow: none;
+}
+.fa-vote-yea:hover::before,
+.fa-vote-yea:focus::before{
+    opacity: 1;
+}
+.fa-vote-yea:hover::after,
+.fa-vote-yea:focus::after{
+    opacity: 1;
+}

@@ -1,0 +1,36 @@
+.container-problemet-teknike-popup{
+    visibility: hidden;
+    max-height: 330px;
+    display: none;
+    width: 40%;
+    background: #ffe1ff;
+    padding: 10px 10px 70px 10px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 10px 49px -14px var(--clr-neon-qelt);
+    -moz-box-shadow: 0px 10px 49px -14px  var(--clr-neon-qelt);
+    box-shadow: 0px 10px 109px -14px black;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-problemet-teknike-popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-problemet-teknike-popup-front .details{
+    margin: 10px;
+    text-align: center;
+}
+.container-problemet-teknike-popup-front .details i{
+    font-size: 30px;
+    color:  var(--clr-neon-qelt);
+    margin: 1px;
+    box-shadow: 0px 10px 109px -14px white;
+}
+.container-problemet-teknike-popup-front .details .text-nje,
+.container-problemet-teknike-popup-front .details .text-dy{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    font-style: italic;
+}
+

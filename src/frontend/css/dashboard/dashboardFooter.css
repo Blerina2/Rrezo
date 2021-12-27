@@ -1,0 +1,27 @@
+footer{
+    visibility: hidden;
+    display: none;
+    color: white;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 99;
+}
+footer p{
+    margin: 10px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 1000;
+}
+footer i{
+    color: var(--clr-neon-light);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 1000;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rrezo</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://emoji-css.afeld.me/emoji.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/purpleTheme.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/dashBoard.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/neonButton.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/gridContainerMenu.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/profiliPerdoruesit.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/footergridkontinierbuttons.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faComments.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/fa-grin-hearts.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faStarHalfAlt.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/farFaTired.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/dashboardFooter.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faNewspaper.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faChartLine.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faHireAHelper.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faSearch.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/faVoteYea.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/newspaper.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/statistika.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/ndim.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/kerko.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/voto.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/kontinierEmojiVoto.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/dergoVotiminProfButton.css">
+
+</head>
+<body>
+<canvas id="matrixId"></canvas>
+<header id="headerDashboard">
+    <div id="changeThemes">
+        <img src="../images/logoRrezo.jpg" id="logoRrezoDashboard" alt="logo Rrezo" onclick="ndryshoNgjyren()">
+    </div>
+    <div class="profil-container" title="Profili Perdoruesit" onclick="shfaqePopupPerdoruesit()">
+        <div class="kartelaProfili">
+            <div class="unazaProfilitBg">
+                <div class="unazaProfilit">
+                    <div class="fytyraUnazes"></div>
+                    <div class="trupiProfilit"></div>
+                </div>
+            </div>
+        </div>
+        <div class="profiliOpsion" id="ProfiliOpsion">
+            <form action="logout" method="get">
+                <input class="shkyqProfilin" type="submit" value="Shkyçu">
+            </form>
+            <form action="profili" method="get">
+                <input class="editoProfilin" type="submit" value="Redakto profilin">
+            </form>
+        </div>
+    </div>
+</header>
+
+
+<div class="grid-container-menu" id="menuButtonId">
+    <div class="grid-container-menu-item">
+        <div class="container">
+            <div id="showMenuItemsId" class="diamond">
+                <div id="mainRotCorrect " class="rotCorrect">
+                    <p class="rrezoMenuButton" title="Menu" onclick="showMenu()">Rrezo</p>
+                </div>
+            </div>
+            <div id="nav1" class="nav nav1 diamond small">
+                <div class="rotCorrect">
+                    <i title="Lajmet" class="fas fa-newspaper" onclick="showNewspaper()" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="nav2" class="nav nav2 diamond small">
+                <div class="rotCorrect">
+                    <i title="Statistika" class="fas fa-chart-line" onclick="showStatistikat()" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="nav3" class="nav nav3 diamond small">
+                <div class="rotCorrect">
+                    <i title="Ndihmë" class="fab fa-hire-a-helper" onclick="showNdim()" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="nav4" class="nav nav4 diamond small">
+                <div class="rotCorrect">
+                    <i title="Kërko" class="fas fa-search" onclick="showKerko()" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div id="nav5" class="nav nav5 diamond small">
+            <div class="rotCorrect">
+                <i title="Voto për prof" class="fas fa-vote-yea" onclick="showVoto()" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container-menu-content" id="gridContainerMenuContentId">
+        <div class="newspaper" id="newspaperId">
+            <div class="grid-container-newspaper">
+                <div class="grid-item-newspaper">
+                    <h1>Lajmet Aktuale</h1>
+                </div>
+            </div>
+        </div>
+        <div class="statistika" id="statistikaId">
+            <div class="grid-container-statistika">
+                <div class="grid-item-statistika">
+                    <h1>Popullariteti i Profesorave</h1>
+                    <div class="pieChartStatistika" id="pieChartStatistikaId"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ndim" id="ndimId">
+            <div class="grid-container-ndim">
+                <div class="grid-item-ndim">
+                    <h1>Ndihme</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="kerko" id="kerkoId">
+            <div class="grid-container-kerko">
+                <div class="grid-item-kerko">
+                    <h1>Kerko</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="voto" id="votoId">
+            <div class="grid-container-voto">
+                <div class="grid-item-voto-zgjidh-prof">
+                    <div class="prof-item" id="profItem" ondrop="terheqeProf(event)"
+                         ondragover="leshoTerheqjenProf(event)"></div>
+                </div>
+                <div class="grid-item-voto-lesho-emoji">
+                    <div id="dropAreaProf" ondrop="terheqeProf(event)" ondragover="leshoTerheqjenProf(event)">
+                        <p>Emri i Profesorit</p>
+                    </div>
+                    <div id="dropAreaEmoji" ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                        <p>Emoji</p>
+                    </div>
+                </div>
+                <div class="grid-item-voto-emoji">
+                    <div class="kontinier-emoji">
+                        <div class="kontinier-emoji-item" id="div-emoji-smiley-item" ondrop="terheqeEmoji(event)"
+                             ondragover="leshoTerheqjenEmoji(event)">
+                            <i draggable="true" class="em em-smiley" aria-role="presentation"
+                               aria-label="SMILING FACE WITH OPEN MOUTH"
+                               id="emSmileyEmoji" ondragstart="drag(event)">
+                            </i>
+                        </div>
+                        <div class="kontinier-emoji-item" id="div-emoji-slightly-smiley-item"
+                             ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                            <i draggable="true" class="em em-slightly_smiling_face" aria-role="presentation"
+                               aria-label="SLIGHTLY SMILING FACE"
+                               id="emSlightlySmileyEmoji" ondragstart="drag(event)">
+                            </i>
+                        </div>
+                        <div class="kontinier-emoji-item" id="div-emoji-slightly-frowning-item"
+                             ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                            <i draggable="true" class="em em-slightly_frowning_face" aria-role="presentation"
+                               aria-label="SLIGHTLY FROWNING FACE"
+                               id="emSlightlyFrowningEmoji" ondragstart="drag(event)">
+                            </i>
+                        </div>
+
+                        <div class="kontinier-emoji-item" id="div-emoji-expressionless-item"
+                             ondrop="terheqeEmoji(event)" ondragover="leshoTerheqjenEmoji(event)">
+                            <i draggable="true" class="em em-expressionless" aria-role="presentation"
+                               aria-label="EXPRESSIONLESS FACE"
+                               id="emExpressionlessEmoji" ondragstart="drag(event)">
+                            </i>
+                        </div>
+
+                        <div class="kontinier-emoji-item" id="div-emoji-no_mouth-item" ondrop="terheqeEmoji(event)"
+                             ondragover="leshoTerheqjenEmoji(event)">
+                            <i draggable="true" class="em em-no_mouth" aria-role="presentation"
+                               aria-label="FACE WITHOUT MOUTH"
+                               id="emNo_MouthEmoji" ondragstart="drag(event)">
+                            </i>
+                        </div>
+                        <div class="kontinier-emoji-item">
+                            <button class="glow-on-hover" type="button" onclick="dergoVotimin()">
+                                Dergo votimin
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<footer id="footergridkontinierbuttons">
+    <div class="grid-container-buttons">
+        <div class="grid-item-button">
+            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Rating">
+                <i class="fa fa-star-half-alt"></i>
+            </a>
+        </div>
+        <div class="grid-item-button">
+            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Feedback">
+                <i class="fa fa-comments"></i>
+            </a>
+        </div>
+        <div class="grid-item-button">
+            <a class="neon-button" href="" target="_blank" aria-hidden="true" title="Ankesat">
+                <i class="far fa-tired"></i>
+            </a>
+        </div>
+    </div>
+    <p>Krijuar me <i class="far fa-grin-hearts"></i> nga <a>Albulena, Blerta, Blerina, Arbresha</a></p>
+</footer>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="application/javascript" src="../js/dashboard/matrixEffect.js"></script>
+<script type="application/javascript" src="../js/dashboard/ndryshoNgjyren.js"></script>
+<script type="application/javascript" src="../js/dashboard/shaqePopupPerdoruesit.js"></script>
+<script type="application/javascript" src="../js/dashboard/showMenu.js"></script>
+<script type="application/javascript" src="../js/dashboard/showNewspaper.js"></script>
+<script type="application/javascript" src="../js/dashboard/showStatistikat.js"></script>
+<script type="application/javascript" src="../js/dashboard/showNdim.js"></script>
+<script type="application/javascript" src="../js/dashboard/showKerko.js"></script>
+<script type="application/javascript" src="../js/dashboard/showVoto.js"></script>
+<script type="application/javascript" src="../js/dashboard/votoProf.js"></script>
+
+</body>
+</html>

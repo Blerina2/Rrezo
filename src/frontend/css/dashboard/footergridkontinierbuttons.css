@@ -1,0 +1,19 @@
+#footergridkontinierbuttons{
+    visibility: hidden;
+    display: none;
+    overflow: hidden;
+
+}
+.grid-container-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+
+}
+.grid-item-button{
+    background-color: transparent;
+    text-align: center;
+}

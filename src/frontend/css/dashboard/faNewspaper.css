@@ -1,0 +1,21 @@
+.fa-newspaper{
+    color: white;
+    margin-top: 10px;
+    margin-left: -14px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.fa-newspaper:hover,
+.fa-newspaper:focus{
+    color: white;
+    text-shadow: none;
+}
+.fa-newspaper:hover::before,
+.fa-newspaper:focus::before{
+    opacity: 1;
+}
+.fa-newspaper:hover::after,
+.fa-newspaper:focus::after{
+    opacity: 1;
+}

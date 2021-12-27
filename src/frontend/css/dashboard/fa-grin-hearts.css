@@ -1,0 +1,20 @@
+.fa-grin-hearts{
+    justify-content: center;
+}
+
+
+.fa-grin-hearts:hover,
+.fa-grin-hearts:focus{
+    color: white;
+    text-shadow: none;
+}
+.fa-grin-hearts:hover::before,
+.fa-grin-hearts:focus::before{
+    opacity: 1;
+
+}
+.fa-grin-hearts:hover::after,
+.fa-grin-hearts:focus::after{
+    opacity: 1;
+
+}

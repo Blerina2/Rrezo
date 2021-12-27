@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+    --clr-neon-light: #f046ff;
+    --clr-purple: purple;
+    --clr-neon-qelt: #FF10e8;
+    --clr-neon-mshelt: #ba24c2;
+    --clr-neon-zi: #d43ddb;
+    --clr-coral: lightcoral;
+    --clr-pink-bardh: #edbef1;
+    --clr-pink-qelt: lightpink;
+    --clr-lekure: papayawhip;
+    --clr-kuq-qelt: #e5ccc9;
+    --clr-sdi: #e88bee;
+    --background-image-rrezo: url("../../images/dashboardImagePurple.png");
+}
+
+html {
+    background-image: var(--background-image-rrezo);
+}
+
+
