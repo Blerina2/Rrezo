@@ -30,12 +30,18 @@
     <link rel="stylesheet" type="text/css" href="../css/dashboard/voto.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/kontinierEmojiVoto.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/dergoVotiminProfButton.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/postBox.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/panda.css">
+<!--    <link rel="stylesheet" type="text/css" href="../css/dashboard/bayMax.css">-->
 
 </head>
 <body>
 <canvas id="matrixId"></canvas>
 <header id="headerDashboard">
     <div id="changeThemes">
+<!--        <div class="bayMax" id="bodyBayMax">-->
+
+<!--        </div>-->
         <img src="../images/logoRrezo.jpg" id="logoRrezoDashboard" alt="logo Rrezo" onclick="ndryshoNgjyren()">
     </div>
     <div class="profil-container" title="Profili Perdoruesit" onclick="shfaqePopupPerdoruesit()">
@@ -100,6 +106,14 @@
             <div class="grid-container-newspaper">
                 <div class="grid-item-newspaper">
                     <h1>Lajmet Aktuale</h1>
+                    <div class="postBox">
+                            <input type="text" id="comment-box" placeholder="Enter comment">
+                            <button id="post">Post</button>
+                            <ul id="unordered"></ul>
+                    </div>
+                    <div class="box">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -230,6 +244,7 @@
 <script type="application/javascript" src="../js/dashboard/showKerko.js"></script>
 <script type="application/javascript" src="../js/dashboard/showVoto.js"></script>
 <script type="application/javascript" src="../js/dashboard/votoProf.js"></script>
+<script type="application/javascript" src="../js/dashboard/postBox.js"></script>
 
 </body>
 </html>
