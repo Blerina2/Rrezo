@@ -1,0 +1,14 @@
+.kontinier-ndihme {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #185875;
+    border-radius: 15px;
+    border: solid;
+    background-color: var(--clr-neon);
+}
+
+.ndihme{
+    background: var(--clr-neon-light);
+
+}
