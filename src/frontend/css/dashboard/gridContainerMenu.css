@@ -10,6 +10,7 @@
     margin-top: 0;
     visibility: hidden;
     display: none;
+
 }
 .grid-container-menu > div{
     text-align: center;
@@ -23,6 +24,7 @@
 .grid-container-menu-item{
     float: right;
     padding-left: 370px !important;
+
 }
 
 .grid-container-menu-content {
@@ -36,6 +38,7 @@
     visibility: hidden;
     display: none;
     width: 800px;
+
 }
 
 

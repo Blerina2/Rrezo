@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 :root {
-    --clr-neon: hsl(317 100% 54%);
+    --clr-neon: hsl(319, 70%, 60%);
     --clr-bg: hsl(323 21% 16%);
     --clr-neon-light: #f046ff;
     --clr-purple: purple;

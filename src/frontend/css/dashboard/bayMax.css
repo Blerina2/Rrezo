@@ -1,0 +1,71 @@
+/*#bodyBayMax{*/
+/*    background: radial-gradient(circle at center, #fff, #fff 50%, #aaa);*/
+/*    background-size: 10px 10px;*/
+/*    background-repeat: no-repeat;*/
+/*    height: 10px;*/
+/*}*/
+/*.bayMax {*/
+/*    border-bottom: 1.5em solid #000;*/
+/*    position: absolute;*/
+/*    top: 10%;*/
+/*    left: 50%;*/
+/*    width: 10%;*/
+/*    transform: translate(-50%, -40%);*/
+/*}*/
+/*.bayMax::before {*/
+/*    background: #000;*/
+/*    border-radius: 50%;*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 5em;*/
+/*    left: -9em;*/
+/*    top: -6em;*/
+/*    transform: skewX(-4deg);*/
+/*}*/
+
+/*.bayMax::after {*/
+/*    background: #000;*/
+/*    border-radius: 50%;*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 5em;*/
+/*    right: -6em;*/
+/*    top: -6em;*/
+/*    transform: skewX(4deg);*/
+/*}*/
+/*.bayMax::before {*/
+/*    background: linear-gradient(to bottom, #efefef, #efefef 50%, #000 50%, #000);*/
+/*    background-position: 0 -100%;*/
+/*    background-size: 200% 200%;*/
+/*...*/
+/*}*/
+
+/*.bayMax::after {*/
+/*    background: linear-gradient(to bottom, #efefef, #efefef 50%, #000 50%, #000);*/
+/*    background-position: 0 -100%;*/
+/*    background-size: 200% 200%;*/
+/*...*/
+/*}*/
+/*@keyframes blink {*/
+/*    0%, 50% {*/
+/*        background-position: 0 100%;*/
+/*    }*/
+/*    85%, 95% {*/
+/*        background-position: 0 75%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0 100%;*/
+/*    }*/
+/*}*/
+
+/*.bayMax::before {*/
+/*    animation: blink 6s infinite;*/
+/*...*/
+/*}*/
+
+/*.bayMax::after {*/
+/*    animation: blink 6s 0.1s infinite;*/
+/*...*/
+/*}*/
