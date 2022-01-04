@@ -6,22 +6,20 @@
     margin-top: 10px;
     position: relative;
     /* Chrome, Safari, Opera */
-    -webkit-animation-name: moveit;
-    -webkit-animation-duration: 2s;
+    -webkit-animation: repeatit 1s linear 3s infinite alternate;
     /* Standard syntax */
-    animation-name: moveit;
-    animation-duration: 5s;
-    border-radius: 50px;
+    animation: repeatit 3s linear 0s infinite alternate;
+    border-radius: 30px;
 }
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes moveit {
+@-webkit-keyframes repeatit {
     from {left: 0;}
     to {left: 73%;}
 }
 
 /* Standard syntax */
-@keyframes moveit {
+@keyframes repeatit {
     from {left: 0;}
     to {left: 73%;}
 }

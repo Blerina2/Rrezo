@@ -1,5 +1,109 @@
 
-
-.ndihme{
-    background-color:var(--clr-neon-light);
+.ndihme {
+    background: var(--clr-neon-light);
 }
+
+.kontinier-ndihme {
+    border-radius: 15px;
+    border: var(--clr-pink-qelt) solid;
+    position: center;
+    margin-left: 250px;
+    border-collapse: separate;
+    -webkit-column-count: 3;
+}
+
+table, td, th {
+    border: var(--clr-pink-bardh) solid;
+    border-radius: 10px;
+    border-spacing: 10px;
+    text-align: left;
+
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+.kontinjer {
+    margin-left: 250px;
+    display: grid;
+}
+
+.kontinjer-brenda{
+    margin-left: 50px;
+}
+
+.snake {
+    width: 10px;
+    height: 10px;
+    background: var(--clr-neon-light);
+    border-radius: 30px;
+    position: relative;
+    animation: myfirst 5s 2;
+    animation-direction: alternate;
+    display: grid;
+    -webkit-animation: myfirst 5s infinite;
+}
+
+
+/*.animacioni {*/
+
+
+/*}*/
+
+@keyframes myfirst {
+    0% {
+        background: var(--clr-pink-bardh);
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: var(--clr-pink-qelt);
+        left: 300px;
+        top: 0px;
+    }
+    50% {
+        background: var(--clr-neon-light);
+        left: 300px;
+        top: 300px;
+    }
+    75% {
+        background: var(--clr-kuq-qelt);
+        left: 0px;
+        top: 300px;
+    }
+    100% {
+        background: var(--clr-purple);
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--clr-neon);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-neon-mshelt);
+}
+

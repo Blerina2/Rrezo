@@ -114,6 +114,15 @@ app.get("/logout",(request,response)=>{
     response.end();
 });
 
+app.get("/ndihme",(request,response)=>{
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/ndihme.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
+
 app.get("/profili",(request,response)=> {
         if (request.session.loggedin) {
             response.sendFile(path.join(__dirname + "/frontend/views/profili.html"));

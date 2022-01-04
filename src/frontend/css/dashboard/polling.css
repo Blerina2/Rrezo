@@ -1,0 +1,30 @@
+.polling_message {
+    color: white;
+    float: left;
+    margin-right: 2%;
+}
+
+.view_port {
+    background-color: var(--clr-neon-light);
+    border-radius: 30px;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cylon_eye {
+    background-color:var(--clr-neon-light);
+    background-image: linear-gradient(to right,
+    var(--clr-neon) 25%,
+    var(--clr-pink-qelt) 50%,
+    var(--clr-pink-bardh) 75%);
+    color: white;
+    height: 100%;
+    width: 10%;
+    border-radius: 30px;
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+@keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }

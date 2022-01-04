@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: var(--clr-neon-light)">
 <head>
     <meta charset="UTF-8">
     <title>Ndihme</title>
     <link rel="stylesheet" type="text/css" href="../css/dashboard/ndihme.css">
+    <link type="text/css" rel="stylesheet" href="../css/landingPage/indexThemes.css">
+
 </head>
 <body>
 
-     <div class="ndihme">
 
-    <table class="kontinier-ndihme">
+<div class="ndihme">
+    <table class="kontinier-ndihme" >
         <caption>Pyetje</caption>
         <tr>
             <th>Pyetje të studentave</th>
@@ -17,7 +19,7 @@
             <th>Pyetje Gjenerale</th>
         </tr>
         <tr>
-            <td>A do të mbetem anonim?</td>
+            <td class="td">A do të mbetem anonim?</td>
             <td> Diskriminimi në faqe</td>
             <td>Menyra e shkalles se vlersimit</td>
         </tr>
@@ -52,28 +54,31 @@
             <td>Shperndarja e informatave me pale te trete</td>
         </tr>
     </table>
-    <p>3.A ishin informatat e kërkuara?</p>
-    <form action="/action_page.php"
-          style="color: black ; overflow: auto; background-color: var(--clr-sdi);border-radius: 12px;">
-        <input type="radio" id="po" name="Informata">
-        <label for="po">Po</label><br>
-        <input type="radio" id="jo" name="Informata">
-        <label for="jo">Jo</label><br>
-        <input type="radio" id="Pjeserisht" name="Pjeserisht">
-        <label for="Pjeserisht">Pjeserisht</label>
-    </form>
-    <p>2.Keni nevojë për informata shtese</p>
-    <form action="/action_page.php"
-          style="color: black; overflow: auto; background-color: var(--clr-sdi);border-radius: 12px;">
-        <input type="checkbox" id="po1">
-        <label for="po"> Po</label><br>
-        <input type="checkbox" id="jo1">
-        <label for="jo">Jo</label><br>
-        <input type="checkbox" id="Pyetje">
-        <label for="Pyetje"> Pyetje tjera</label><br><br>
-        <input type="submit" value="Submit" required>
-    </form>
-</div>
+    <div class="kontinjer">
+        <div class="snake"></div>
+        <div class="kontinjer-brenda">
+            <p>3.A ishin informatat e kërkuara?</p>
+            <form action="">
+                <input type="radio" id="po" name="Informata">
+                <label for="po">Po</label><br>
+                <input type="radio" id="jo" name="Informata">
+                <label for="jo">Jo</label><br>
+                <input type="radio" id="Pjeserisht" name="Pjeserisht">
+                <label for="Pjeserisht">Pjeserisht</label>
+            </form>
+
+            <p>2.Keni nevojë për informata shtese</p>
+            <form action="">
+                <input type="checkbox" id="po1">
+                <label for="po"> Po</label><br>
+                <input type="checkbox" id="jo1">
+                <label for="jo">Jo</label><br>
+                <input type="checkbox" id="Pyetje">
+                <label for="Pyetje"> Pyetje tjera</label><br><br>
+                <input type="submit" value="Submit" required>
+            </form>
+        </div>
+    </div>
 </div>
 </body>
 </html>
