@@ -1,0 +1,22 @@
+.fa-power-off{
+    overflow: hidden;
+    color: black;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    text-shadow:  1px 1px var(--clr-neon);
+    margin-top: 35px;
+}
+.fa-power-off:hover,
+.fa-power-off:focus{
+    color: black;
+    margin-top: 35px;
+}
+.fa-power-off:hover::before,
+.fa-power-off:focus::before{
+    opacity: 1;
+}
+.fa-power-off:hover::after,
+.fa-power-off:focus::after{
+    opacity: 1;
+}

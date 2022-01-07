@@ -5,12 +5,12 @@
     display: flex;
     justify-content: center;
     text-shadow:  2px 2px var(--clr-neon);
-    margin-top: 13px;
+    margin-top: 35px;
 }
 .fa-mail-bulk:hover,
 .fa-mail-bulk:focus{
     color: black;
-    margin-top: 13px;
+    margin-top: 35px;
 }
 .fa-mail-bulk:hover::before,
 .fa-mail-bulk:focus::before{

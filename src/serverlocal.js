@@ -141,6 +141,15 @@ app.get("/userInbox",(request,response)=> {
     }
 });
 
+app.get("/votimiim",(request,response)=> {
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/votimiim.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
+
 
 
 

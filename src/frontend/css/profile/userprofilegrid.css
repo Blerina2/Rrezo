@@ -53,6 +53,18 @@
     text-align: center;
     grid-column-start: 4;
 }
+.grid-container-user-profile-cachel-item-3{
+    text-align: center;
+    grid-column-start: 3;
+}
+.grid-container-user-profile-cachel-item-4{
+    text-align: center;
+    grid-column-start: 2;
+}
+
+
+
+
 .box{
     display: flex;
     align-items: center;
