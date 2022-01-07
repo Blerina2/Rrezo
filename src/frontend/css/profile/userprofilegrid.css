@@ -1,4 +1,24 @@
-.grid-container-user-profile{
+.header-item {
+    grid-area: header;
+}
+
+.menu-item {
+    grid-area: menu;
+}
+
+.main-item {
+    grid-area: main;
+}
+
+.right-item {
+    grid-area: right;
+}
+
+.footer-item {
+    grid-area: footer;
+}
+
+.grid-container-user-profile {
     display: grid;
     grid-template-areas:
     'header header header header header header'
@@ -8,78 +28,66 @@
     grid-gap: 20px;
     padding: 40px;
 }
-.header-item{
-    grid-area: header;
-}
+
 .grid-container-user-profile > div {
-    background-color: transparent;
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
 }
-.menu-item{
-    grid-area: menu;
-}
-.main-item{
-    grid-area: main;
-}
-.right-item{
-    grid-area: right;
-}
-.footer-item{
-    grid-area: footer;
-}
-.grid-container{
+
+
+.grid-container-user-profile-cachel {
     display: grid;
-    grid-template-rows: auto auto;
-    padding: 10px;
-    gap: 40px;
-}
-.grid-item{
-    padding: 100px;
-    font-size: 30px;
-    text-align: center;
-}
-.grid-container-user-profile-cachel{
-  display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
 }
-.grid-container-user-profile-cachel-item-1{
+
+.grid-container-user-profile-cachel-item-1 {
     text-align: center;
     grid-column-start: 2;
 }
-.grid-container-user-profile-cachel-item-2{
+
+.grid-container-user-profile-cachel-item-2 {
     text-align: center;
     grid-column-start: 4;
 }
-.grid-container-user-profile-cachel-item-3{
+
+.grid-container-user-profile-cachel-item-3 {
     text-align: center;
     grid-column-start: 3;
 }
-.grid-container-user-profile-cachel-item-4{
+
+.grid-container-user-profile-cachel-item-4 {
     text-align: center;
     grid-column-start: 2;
 }
-.grid-container-user-profile-cachel-item-5{
+
+.grid-container-user-profile-cachel-item-5 {
     text-align: center;
     grid-column-start: 4;
 }
-.grid-container-user-profile-cachel-item-6{
+
+.grid-container-user-profile-cachel-item-6 {
     text-align: center;
 }
-.grid-container-user-profile-cachel-item-7{
+
+.grid-container-user-profile-cachel-item-7 {
     text-align: center;
     grid-column-start: 3;
 }
-.grid-container-user-profile-cachel-item-8{
+
+.grid-container-user-profile-cachel-item-8 {
     text-align: center;
     grid-column-start: 2;
 }
 
+@supports (display: grid) {
+    body,
+    html {
+        display: block;
+    }
+}
 
-
-.box{
+.box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,21 +96,37 @@
     margin-top: 4px;
     width: 100px;
     height: 100px;
-    box-shadow: inset 0 0 0.5em 0 var(--clr-neon) , 0 0 0.5em 0 var(--clr-neon);
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
     color: black;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-trasnform 0.3s ease-in-out;
     cursor: pointer;
-    border: var(--clr-neon)  3px solid;
+    border: var(--clr-neon) 3px solid;
 }
-.box:after{
+
+.box:after {
     content: "";
     position: absolute;
 }
-.box:hover{
+
+.box:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
-.box:hover::after{
+
+.box:hover::after {
     opacity: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    gap: 40px;
+}
+
+.grid-item {
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
 }

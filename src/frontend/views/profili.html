@@ -3,86 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <title>Profili</title>
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://emoji-css.afeld.me/emoji.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/userprofilegrid.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/themesuserprofile.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/fa-mail-bulk.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/userprofileitems.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/fa-power-off.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/fa-poll-h.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/fa-user-edit.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/fa-long-arrow-alt-left.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/fa-user-friends.css">
-    <link type="text/css" rel="stylesheet"  href="../css/profile/fa-youtube.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/userprofilegrid.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/flower.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/themesuserprofile.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/userprofileitems.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/fa-mail-bulk.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/fa-power-off.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/fa-poll-h.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/fa-user-edit.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/fa-long-arrow-alt-left.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/fa-user-friends.css">
+    <link type="text/css" rel="stylesheet" href="../css/profile/fa-youtube.css">
 
 
 </head>
 <body>
+
 <div class="user-profile-cachel">
-  <div class="grid-container-user-profile">
-      <div class="header-item" >Header</div>
-      <div class="menu-item">Menu</div>
-      <div class="main-item">
-          <div class="grid-container">
-              <div class="grid-item">
-                  <div class="planet"></div>
-              </div>
-              <div class="grid-item"></div>
-          </div>
-      </div>
-      <div class="right-item">
-          <div class="grid-container-user-profile-cachel">
-              <div class="grid-container-user-profile-cachel-item-1">
-                  <div class="box">
-                      <form action="userInbox" method="get">
-                          <label for="clickable">
-                             <i title="Shko tek imellat" class="fas fa-mail-bulk"></i>
-                          </label>
-                          <input type="submit" id="clickable" class="input-box" value="">
-                      </form>
-                  </div>
-              </div>
-              <div class="grid-container-user-profile-cachel-item-2">
-                  <div class="box">
-                      <form action="logout" method="get">
-                          <label for="clickable-shkyq">
-                              <i class="fas fa-power-off" title="Shkyq"></i>
-                          </label>
-                          <input type="submit" id="clickable-shkyq" value="" class="input-box">
-                      </form>
-                  </div>
-              </div>
-            <div class="grid-container-user-profile-cachel-item-3">
-                <div class="box">
-                    <form action="votimiim" method="get">
-                        <label for="clickable-votimiim">
-                            <i class="fas fa-poll-h" title="votimiim"></i>
-                        </label>
-                          <input type="submit" id="clickable-votimiim" value="" class="input-box">
-                    </form>
-                </div>
-
-
+    <div class="grid-container-user-profile">
+        <div class="header-item"></div>
+        <div class="menu-item">
+            <div id="flowerId">
+                <input type="checkbox" id="bloom"/>
+                <label class="flower select-2" style="--num: 199" for="bloom">
+                    <div class="pedal" style="--i: 0; --iHex: 0"></div>
+                    <div class="pedal" style="--i: 1; --iHex: 1"></div>
+                    <div class="pedal" style="--i: 2; --iHex: 2"></div>
+                    <div class="pedal" style="--i: 3; --iHex: 3"></div>
+                    <div class="pedal" style="--i: 4; --iHex: 5"></div>
+                    <div class="pedal" style="--i: 5; --iHex: 6"></div>
+                    <div class="pedal" style="--i: 6; --iHex: 7"></div>
+                    <div class="pedal" style="--i: 7; --iHex: 8"></div>
+                    <div class="pedal" style="--i: 8; --iHex: 10"></div>
+                    <div class="pedal" style="--i: 9; --iHex: 11"></div>
+                    <div class="pedal" style="--i: 10; --iHex: 12"></div>
+                    <div class="pedal" style="--i: 11; --iHex: 14"></div>
+                    <div class="pedal" style="--i: 12; --iHex: 15"></div>
+                    <div class="pedal" style="--i: 13; --iHex: 16"></div>
+                    <div class="pedal" style="--i: 14; --iHex: 17"></div>
+                    <div class="pedal" style="--i: 15; --iHex: 19"></div>
+                    <div class="pedal" style="--i: 16; --iHex: 20"></div>
+                    <div class="pedal" style="--i: 17; --iHex: 21"></div>
+                    <div class="pedal" style="--i: 18; --iHex: 23"></div>
+                    <div class="pedal" style="--i: 19; --iHex: 24"></div>
+                    <div class="pedal" style="--i: 20; --iHex: 25"></div>
+                    <div class="pedal" style="--i: 21; --iHex: 26"></div>
+                    <div class="pedal" style="--i: 22; --iHex: 28"></div>
+                    <div class="pedal" style="--i: 23; --iHex: 29"></div>
+                    <div class="pedal" style="--i: 24; --iHex: 30"></div>
+                    <div class="pedal" style="--i: 25; --iHex: 32"></div>
+                    <div class="pedal" style="--i: 26; --iHex: 33"></div>
+                    <div class="pedal" style="--i: 27; --iHex: 34"></div>
+                    <div class="pedal" style="--i: 28; --iHex: 35"></div>
+                    <div class="pedal" style="--i: 29; --iHex: 37"></div>
+                    <div class="pedal" style="--i: 30; --iHex: 38"></div>
+                    <div class="pedal" style="--i: 31; --iHex: 39"></div>
+                    <div class="pedal" style="--i: 32; --iHex: 41"></div>
+                    <div class="pedal" style="--i: 33; --iHex: 42"></div>
+                    <div class="pedal" style="--i: 34; --iHex: 43"></div>
+                    <div class="pedal" style="--i: 35; --iHex: 44"></div>
+                    <div class="pedal" style="--i: 36; --iHex: 46"></div>
+                    <div class="pedal" style="--i: 37; --iHex: 47"></div>
+                    <div class="pedal" style="--i: 38; --iHex: 48"></div>
+                    <div class="pedal" style="--i: 39; --iHex: 49"></div>
+                    <div class="pedal" style="--i: 40; --iHex: 51"></div>
+                    <div class="pedal" style="--i: 41; --iHex: 52"></div>
+                    <div class="pedal" style="--i: 42; --iHex: 53"></div>
+                    <div class="pedal" style="--i: 43; --iHex: 55"></div>
+                    <div class="pedal" style="--i: 44; --iHex: 56"></div>
+                    <div class="pedal" style="--i: 45; --iHex: 57"></div>
+                    <div class="pedal" style="--i: 46; --iHex: 58"></div>
+                    <div class="pedal" style="--i: 47; --iHex: 60"></div>
+                    <div class="pedal" style="--i: 48; --iHex: 61"></div>
+                    <div class="pedal" style="--i: 49; --iHex: 62"></div>
+                    <div class="pedal" style="--i: 50; --iHex: 64"></div>
+                    <div class="pedal" style="--i: 51; --iHex: 65"></div>
+                    <div class="pedal" style="--i: 52; --iHex: 66"></div>
+                    <div class="pedal" style="--i: 53; --iHex: 67"></div>
+                    <div class="pedal" style="--i: 54; --iHex: 69"></div>
+                    <div class="pedal" style="--i: 55; --iHex: 70"></div>
+                    <div class="pedal" style="--i: 56; --iHex: 71"></div>
+                    <div class="pedal" style="--i: 57; --iHex: 73"></div>
+                    <div class="pedal" style="--i: 58; --iHex: 74"></div>
+                    <div class="pedal" style="--i: 59; --iHex: 75"></div>
+                    <div class="pedal" style="--i: 60; --iHex: 76"></div>
+                    <div class="pedal" style="--i: 61; --iHex: 78"></div>
+                    <div class="pedal" style="--i: 62; --iHex: 79"></div>
+                    <div class="pedal" style="--i: 63; --iHex: 80"></div>
+                    <div class="pedal" style="--i: 64; --iHex: 82"></div>
+                    <div class="pedal" style="--i: 65; --iHex: 83"></div>
+                    <div class="pedal" style="--i: 66; --iHex: 84"></div>
+                    <div class="pedal" style="--i: 67; --iHex: 85"></div>
+                    <div class="pedal" style="--i: 68; --iHex: 87"></div>
+                    <div class="pedal" style="--i: 69; --iHex: 88"></div>
+                    <div class="pedal" style="--i: 70; --iHex: 89"></div>
+                    <div class="pedal" style="--i: 71; --iHex: 90"></div>
+                    <div class="pedal" style="--i: 72; --iHex: 92"></div>
+                    <div class="pedal" style="--i: 73; --iHex: 93"></div>
+                    <div class="pedal" style="--i: 74; --iHex: 94"></div>
+                    <div class="pedal" style="--i: 75; --iHex: 96"></div>
+                    <div class="pedal" style="--i: 76; --iHex: 97"></div>
+                    <div class="pedal" style="--i: 77; --iHex: 98"></div>
+                    <div class="pedal" style="--i: 78; --iHex: 99"></div>
+                    <div class="pedal" style="--i: 79; --iHex: 101"></div>
+                    <div class="pedal" style="--i: 80; --iHex: 102"></div>
+                    <div class="pedal" style="--i: 81; --iHex: 103"></div>
+                    <div class="pedal" style="--i: 82; --iHex: 105"></div>
+                    <div class="pedal" style="--i: 83; --iHex: 106"></div>
+                    <div class="pedal" style="--i: 84; --iHex: 107"></div>
+                    <div class="pedal" style="--i: 85; --iHex: 108"></div>
+                    <div class="pedal" style="--i: 86; --iHex: 110"></div>
+                    <div class="pedal" style="--i: 87; --iHex: 111"></div>
+                    <div class="pedal" style="--i: 88; --iHex: 112"></div>
+                    <div class="pedal" style="--i: 89; --iHex: 114"></div>
+                    <div class="pedal" style="--i: 90; --iHex: 115"></div>
+                    <div class="pedal" style="--i: 91; --iHex: 116"></div>
+                    <div class="pedal" style="--i: 92; --iHex: 117"></div>
+                    <div class="pedal" style="--i: 93; --iHex: 119"></div>
+                    <div class="pedal" style="--i: 94; --iHex: 120"></div>
+                    <div class="pedal" style="--i: 95; --iHex: 121"></div>
+                    <div class="pedal" style="--i: 96; --iHex: 123"></div>
+                    <div class="pedal" style="--i: 97; --iHex: 124"></div>
+                    <div class="pedal" style="--i: 98; --iHex: 125"></div>
+                    <div class="pedal" style="--i: 99; --iHex: 126"></div>
+                    <div class="pedal" style="--i: 100; --iHex: 128"></div>
+                    <div class="pedal" style="--i: 101; --iHex: 129"></div>
+                    <div class="pedal" style="--i: 102; --iHex: 130"></div>
+                    <div class="pedal" style="--i: 103; --iHex: 131"></div>
+                    <div class="pedal" style="--i: 104; --iHex: 133"></div>
+                    <div class="pedal" style="--i: 105; --iHex: 134"></div>
+                    <div class="pedal" style="--i: 106; --iHex: 135"></div>
+                    <div class="pedal" style="--i: 107; --iHex: 137"></div>
+                    <div class="pedal" style="--i: 108; --iHex: 138"></div>
+                    <div class="pedal" style="--i: 109; --iHex: 139"></div>
+                    <div class="pedal" style="--i: 110; --iHex: 140"></div>
+                    <div class="pedal" style="--i: 111; --iHex: 142"></div>
+                    <div class="pedal" style="--i: 112; --iHex: 143"></div>
+                    <div class="pedal" style="--i: 113; --iHex: 144"></div>
+                    <div class="pedal" style="--i: 114; --iHex: 146"></div>
+                    <div class="pedal" style="--i: 115; --iHex: 147"></div>
+                    <div class="pedal" style="--i: 116; --iHex: 148"></div>
+                    <div class="pedal" style="--i: 117; --iHex: 149"></div>
+                    <div class="pedal" style="--i: 118; --iHex: 151"></div>
+                    <div class="pedal" style="--i: 119; --iHex: 152"></div>
+                    <div class="pedal" style="--i: 120; --iHex: 153"></div>
+                    <div class="pedal" style="--i: 121; --iHex: 155"></div>
+                    <div class="pedal" style="--i: 122; --iHex: 156"></div>
+                    <div class="pedal" style="--i: 123; --iHex: 157"></div>
+                    <div class="pedal" style="--i: 124; --iHex: 158"></div>
+                    <div class="pedal" style="--i: 125; --iHex: 160"></div>
+                    <div class="pedal" style="--i: 126; --iHex: 161"></div>
+                    <div class="pedal" style="--i: 127; --iHex: 162"></div>
+                    <div class="pedal" style="--i: 128; --iHex: 164"></div>
+                    <div class="pedal" style="--i: 129; --iHex: 165"></div>
+                    <div class="pedal" style="--i: 130; --iHex: 166"></div>
+                    <div class="pedal" style="--i: 131; --iHex: 167"></div>
+                    <div class="pedal" style="--i: 132; --iHex: 169"></div>
+                    <div class="pedal" style="--i: 133; --iHex: 170"></div>
+                    <div class="pedal" style="--i: 134; --iHex: 171"></div>
+                    <div class="pedal" style="--i: 135; --iHex: 172"></div>
+                    <div class="pedal" style="--i: 136; --iHex: 174"></div>
+                    <div class="pedal" style="--i: 137; --iHex: 175"></div>
+                    <div class="pedal" style="--i: 138; --iHex: 176"></div>
+                    <div class="pedal" style="--i: 139; --iHex: 178"></div>
+                    <div class="pedal" style="--i: 140; --iHex: 179"></div>
+                    <div class="pedal" style="--i: 141; --iHex: 180"></div>
+                    <div class="pedal" style="--i: 142; --iHex: 181"></div>
+                    <div class="pedal" style="--i: 143; --iHex: 183"></div>
+                    <div class="pedal" style="--i: 144; --iHex: 184"></div>
+                    <div class="pedal" style="--i: 145; --iHex: 185"></div>
+                    <div class="pedal" style="--i: 146; --iHex: 187"></div>
+                    <div class="pedal" style="--i: 147; --iHex: 188"></div>
+                    <div class="pedal" style="--i: 148; --iHex: 189"></div>
+                    <div class="pedal" style="--i: 149; --iHex: 190"></div>
+                    <div class="pedal" style="--i: 150; --iHex: 192"></div>
+                    <div class="pedal" style="--i: 151; --iHex: 193"></div>
+                    <div class="pedal" style="--i: 152; --iHex: 194"></div>
+                    <div class="pedal" style="--i: 153; --iHex: 196"></div>
+                    <div class="pedal" style="--i: 154; --iHex: 197"></div>
+                    <div class="pedal" style="--i: 155; --iHex: 198"></div>
+                    <div class="pedal" style="--i: 156; --iHex: 199"></div>
+                    <div class="pedal" style="--i: 157; --iHex: 201"></div>
+                    <div class="pedal" style="--i: 158; --iHex: 202"></div>
+                    <div class="pedal" style="--i: 159; --iHex: 203"></div>
+                    <div class="pedal" style="--i: 160; --iHex: 205"></div>
+                    <div class="pedal" style="--i: 161; --iHex: 206"></div>
+                    <div class="pedal" style="--i: 162; --iHex: 207"></div>
+                    <div class="pedal" style="--i: 163; --iHex: 208"></div>
+                    <div class="pedal" style="--i: 164; --iHex: 210"></div>
+                    <div class="pedal" style="--i: 165; --iHex: 211"></div>
+                    <div class="pedal" style="--i: 166; --iHex: 212"></div>
+                    <div class="pedal" style="--i: 167; --iHex: 213"></div>
+                    <div class="pedal" style="--i: 168; --iHex: 215"></div>
+                    <div class="pedal" style="--i: 169; --iHex: 216"></div>
+                    <div class="pedal" style="--i: 170; --iHex: 217"></div>
+                    <div class="pedal" style="--i: 171; --iHex: 219"></div>
+                    <div class="pedal" style="--i: 172; --iHex: 220"></div>
+                    <div class="pedal" style="--i: 173; --iHex: 221"></div>
+                    <div class="pedal" style="--i: 174; --iHex: 222"></div>
+                    <div class="pedal" style="--i: 175; --iHex: 224"></div>
+                    <div class="pedal" style="--i: 176; --iHex: 225"></div>
+                    <div class="pedal" style="--i: 177; --iHex: 226"></div>
+                    <div class="pedal" style="--i: 178; --iHex: 228"></div>
+                    <div class="pedal" style="--i: 179; --iHex: 229"></div>
+                    <div class="pedal" style="--i: 180; --iHex: 230"></div>
+                    <div class="pedal" style="--i: 181; --iHex: 231"></div>
+                    <div class="pedal" style="--i: 182; --iHex: 233"></div>
+                    <div class="pedal" style="--i: 183; --iHex: 234"></div>
+                    <div class="pedal" style="--i: 184; --iHex: 235"></div>
+                    <div class="pedal" style="--i: 185; --iHex: 237"></div>
+                    <div class="pedal" style="--i: 186; --iHex: 238"></div>
+                    <div class="pedal" style="--i: 187; --iHex: 239"></div>
+                    <div class="pedal" style="--i: 188; --iHex: 240"></div>
+                    <div class="pedal" style="--i: 189; --iHex: 242"></div>
+                    <div class="pedal" style="--i: 190; --iHex: 243"></div>
+                    <div class="pedal" style="--i: 191; --iHex: 244"></div>
+                    <div class="pedal" style="--i: 192; --iHex: 246"></div>
+                    <div class="pedal" style="--i: 193; --iHex: 247"></div>
+                    <div class="pedal" style="--i: 194; --iHex: 248"></div>
+                    <div class="pedal" style="--i: 195; --iHex: 249"></div>
+                    <div class="pedal" style="--i: 196; --iHex: 251"></div>
+                    <div class="pedal" style="--i: 197; --iHex: 252"></div>
+                    <div class="pedal" style="--i: 198; --iHex: 253"></div>
+                </label>
             </div>
-              <div class="grid-container-user-profile-cachel-item-4">
-                  <div class="box">
-                      <img src="../images/logoRrezo.jpg" title="ndryshongjyren" class="box" alt="logorrezo"
-                      onclick="ndryshoPamjenePerdoruesit()">
+        </div>
+        <div class="main-item">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="planet"></div>
+                </div>
+                <div class="grid-item"></div>
+            </div>
+        </div>
+        <div class="right-item">
+            <div class="grid-container-user-profile-cachel">
+                <div class="grid-container-user-profile-cachel-item-1">
+                    <div class="box">
+                        <form action="userInbox" method="get">
+                            <label for="clickable">
+                                <i title="Shko tek imellat" class="fas fa-mail-bulk"></i>
+                            </label>
+                            <input type="submit" id="clickable" class="input-box" value="">
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-container-user-profile-cachel-item-2">
+                    <div class="box">
+                        <form action="logout" method="get">
+                            <label for="clickable-shkyq">
+                                <i class="fas fa-power-off" title="Shkyq"></i>
+                            </label>
+                            <input type="submit" id="clickable-shkyq" value="" class="input-box">
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-container-user-profile-cachel-item-3">
+                    <div class="box">
+                        <form action="votimiim" method="get">
+                            <label for="clickable-votimiim">
+                                <i class="fas fa-poll-h" title="votimiim"></i>
+                            </label>
+                            <input type="submit" id="clickable-votimiim" value="" class="input-box">
+                        </form>
+                    </div>
 
-                  </div>
 
-              </div>
-              <div class="grid-container-user-profile-cachel-item-5">
-                  <div class="box">
-                      <form action="editProfile" method="get" >
-                          <label for="clickable-user-edit">
-                              <i class="fas fa-user-edit" title="Edito profilin"></i>
-                          </label>
-                          <input type="submit" id="clickable-user-edit" class="input-box" value="">
-                      </form>
-                  </div>
-              </div>
+                </div>
+                <div class="grid-container-user-profile-cachel-item-4">
+                    <div class="box">
+                        <img src="../images/logoRrezo.jpg" title="ndryshongjyren" class="box" alt="logorrezo"
+                             onclick="ndryshoPamjenePerdoruesit()">
+
+                    </div>
+
+                </div>
+                <div class="grid-container-user-profile-cachel-item-5">
+                    <div class="box">
+                        <form action="editProfile" method="get">
+                            <label for="clickable-user-edit">
+                                <i class="fas fa-user-edit" title="Edito profilin"></i>
+                            </label>
+                            <input type="submit" id="clickable-user-edit" class="input-box" value="">
+                        </form>
+                    </div>
+                </div>
                 <div class="grid-container-user-profile-cachel-item-6">
                     <div class="box">
                         <form action="dashboard" method="get">
@@ -93,35 +301,31 @@
                         </form>
                     </div>
                 </div>
-              <div class="grid-container-user-profile-cachel-item-7">
-                <div class="box">
-                    <form action="komunikimiShoqeror" method="get">
-                        <label for="clickable-user-friends">
-                            <i class="fas fa-user-friends" title="Komunikimi me shoqeri"></i>
-                        </label>
-                        <input type="submit" id="clickable-user-friends" class="input-box" value="">
-                    </form>
+                <div class="grid-container-user-profile-cachel-item-7">
+                    <div class="box">
+                        <form action="komunikimiShoqeror" method="get">
+                            <label for="clickable-user-friends">
+                                <i class="fas fa-user-friends" title="Komunikimi me shoqeri"></i>
+                            </label>
+                            <input type="submit" id="clickable-user-friends" class="input-box" value="">
+                        </form>
+                    </div>
                 </div>
-              </div>
-              <div class="grid-container-user-profile-cachel-item-8">
-                  <div class="box">
-                      <a class="youtube" target="_blank" href="https://www.youtube.com">
-                          <i class="fab fa-youtube" title="Shko ne youtube">
+                <div class="grid-container-user-profile-cachel-item-8">
+                    <div class="box">
+                        <a class="youtube" target="_blank" href="https://www.youtube.com">
+                            <i class="fab fa-youtube" title="Shko ne youtube">
 
-                          </i>
-                      </a>
-                  </div>
-              </div>
-
-          </div>
-
-
-      </div>
-      <div class="footer-item">Footer</div>
-
-
-  </div>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-item"></div>
+    </div>
 </div>
+
 <script type="text/javascript" src="../js/profili/ndryshopamjenperdoruesit.js"></script>
 </body>
 </html>

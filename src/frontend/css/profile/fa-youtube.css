@@ -5,12 +5,10 @@
     display: flex;
     justify-content: center;
     text-shadow:  3px 3px var(--clr-neon);
-    margin-top: 35px;
 }
 .fa-youtube:hover,
 .fa-youtube:focus{
     color: black;
-    margin-top: 35px;
 }
 .fa-youtube:hover::before,
 .fa-youtube:focus::before{
