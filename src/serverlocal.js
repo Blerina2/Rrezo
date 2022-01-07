@@ -150,6 +150,24 @@ app.get("/votimiim",(request,response)=> {
     }
 });
 
+app.get("/editProfile",(request,response)=> {
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/editProfile.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
+
+app.get("/komunikimiShoqeror",(request,response)=> {
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/komunikimiShoqeror.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
+
 
 
 

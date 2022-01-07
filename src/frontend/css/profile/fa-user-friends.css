@@ -1,0 +1,22 @@
+.fa-user-friends{
+    overflow: hidden;
+    color: black;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    text-shadow:  3px 3px var(--clr-neon);
+    margin-top: 35px;
+}
+.fa-user-friends:hover,
+.fa-user-friends:focus{
+    color: black;
+    margin-top: 35px;
+}
+.fa-user-friends:hover::before,
+.fa-user-friends:focus::before{
+    opacity: 1;
+}
+.fa-user-friends:hover::after,
+.fa-user-friends:focus::after{
+    opacity: 1;
+}

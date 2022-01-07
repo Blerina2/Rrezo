@@ -61,7 +61,21 @@
     text-align: center;
     grid-column-start: 2;
 }
-
+.grid-container-user-profile-cachel-item-5{
+    text-align: center;
+    grid-column-start: 4;
+}
+.grid-container-user-profile-cachel-item-6{
+    text-align: center;
+}
+.grid-container-user-profile-cachel-item-7{
+    text-align: center;
+    grid-column-start: 3;
+}
+.grid-container-user-profile-cachel-item-8{
+    text-align: center;
+    grid-column-start: 2;
+}
 
 
 
