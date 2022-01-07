@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+:root {
+    --clr-neon: hsl(319, 70%, 60%);
+    --clr-bg: hsl(323 21% 16%);
+    --clr-neon-light: #f046ff;
+    --clr-purple: purple;
+    --clr-neon-qelt: #FF10e8;
+    --clr-neon-mshelt: #ba24c2;
+    --clr-neon-zi: #d43ddb;
+    --clr-coral: lightcoral;
+    --clr-pink-bardh: #edbef1;
+    --clr-pink-qelt: lightpink;
+    --clr-lekure: papayawhip;
+    --clr-kuq-qelt: #e5ccc9;
+    --clr-sdi: #e88bee;
+    --clr-background-color: black;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: inherit;
+    background: linear-gradient(to bottom, var(--clr-bg) 1%, var(--clr-neon) 50%, var(--clr-neon-light) 70%, var(--clr-purple) 90%,
+    var(--clr-neon-qelt) 95%, var(--clr-neon-mshelt) 99%) no-repeat;
+}
+/*https://codepen.io/cassidoo/pen/zygvGj*/
+.planet{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to bottom,transparent 30%,var(--clr-neon) 50%,var(--clr-neon-light) 70%, var(--clr-neon) 100% ) ;
+    border-radius: 50% ;
+    filter: blur(6px);
+    mask-image: radial-gradient(ellipse 100% 100% at center, transparent 40%, black 60%);
+    box-shadow: 0 70px 20px 5px var(--clr-pink-bardh);
+}

@@ -132,7 +132,14 @@ app.get("/profili",(request,response)=> {
         }
     });
 
-
+app.get("/userInbox",(request,response)=> {
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/userbox.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
 
 
 
