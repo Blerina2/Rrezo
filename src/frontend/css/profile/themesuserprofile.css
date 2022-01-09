@@ -37,5 +37,5 @@ html {
     border-radius: 50% ;
     filter: blur(6px);
     mask-image: radial-gradient(ellipse 100% 100% at center, transparent 40%, black 60%);
-    box-shadow: 0 70px 20px 5px var(--clr-pink-bardh);
+    box-shadow: 0 30px 20px 5px var(--clr-pink-bardh);
 }
