@@ -1,0 +1,22 @@
+.fa-mail-bulk{
+    overflow: hidden;
+    color: black;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    text-shadow:  2px 2px var(--clr-neon);
+    margin-top: 35px;
+}
+.fa-mail-bulk:hover,
+.fa-mail-bulk:focus{
+    color: black;
+    margin-top: 35px;
+}
+.fa-mail-bulk:hover::before,
+.fa-mail-bulk:focus::before{
+    opacity: 1;
+}
+.fa-mail-bulk:hover::after,
+.fa-mail-bulk:focus::after{
+    opacity: 1;
+}

@@ -1,0 +1,22 @@
+.fa-user-edit{
+    overflow: hidden;
+    color: black;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    text-shadow:  2px 2px var(--clr-neon);
+    margin-top: 35px;
+}
+.fa-user-edit:hover,
+.fa-user-edit:focus{
+    color: black;
+    margin-top: 35px;
+}
+.fa-user-edit:hover::before,
+.fa-user-edit:focus::before{
+    opacity: 1;
+}
+.fa-user-edit:hover::after,
+.fa-user-edit:focus::after{
+    opacity: 1;
+}

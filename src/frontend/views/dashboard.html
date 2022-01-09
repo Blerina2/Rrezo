@@ -30,6 +30,9 @@
     <link rel="stylesheet" type="text/css" href="../css/dashboard/voto.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/kontinierEmojiVoto.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard/dergoVotiminProfButton.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/postBox.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/panda.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard/polling.css">
 
 </head>
 <body>
@@ -57,7 +60,6 @@
         </div>
     </div>
 </header>
-
 
 <div class="grid-container-menu" id="menuButtonId">
     <div class="grid-container-menu-item">
@@ -100,6 +102,14 @@
             <div class="grid-container-newspaper">
                 <div class="grid-item-newspaper">
                     <h1>Lajmet Aktuale</h1>
+                    <div class="postBox">
+                        <input type="text" id="comment-box" placeholder="Enter comment">
+                        <button id="post">Post</button>
+                        <ul id="unordered"></ul>
+                    </div>
+                    <div class="box">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,6 +125,32 @@
             <div class="grid-container-ndim">
                 <div class="grid-item-ndim">
                     <h1>Ndihme</h1>
+                    <h3 id="Perdorimi">Nuk kupton faqen? </h3>
+                    <i>Faqja perdoret keshtu:</i>
+                    <ul>
+                        <li>Ne anen e majt kemi buttonin Rrezo ku me klikimin e saj hapen butonat te cilat nevoiten per
+                            lamje,votim,kerkim etj.
+                        </li>
+                        <li>Tek flilimi i faqes ne header kemi logon ku me klikimin e saj do ndryshojm ngjyren e faqes ,
+                            ndresa ne anen e djatht kemi buttonin e profilit ku mundesh me redaktu profilin apo te
+                            shkyqesh
+                        </li>
+                        <li>Ne footer kemi 3 buttona ku me zgjidhjen e buttonit 1 do mund te boni rate profesorin e juaj
+                            , buttonin feedback ku ju si perdorues mund te na ndimoni me opinionet tuaja per permisimin
+                            e webfaqes, si dhe ankesat ku mund te na lajmroni per ndonje gabim teknik apo ankes ne
+                            faqe,prof etj
+                        </li>
+                    </ul>
+                    <div class="view_port">
+                        <div class="polling_message">
+                            <form action="ndihme" method="get">
+                                <input style="margin-left: 10px;  background: transparent; border: none; color: white;"
+                                       type="submit" value="Per ma shum info kliko ketu">
+                            </form>
+                        </div>
+                        <div class="cylon_eye"></div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -122,7 +158,11 @@
         <div class="kerko" id="kerkoId">
             <div class="grid-container-kerko">
                 <div class="grid-item-kerko">
-                    <h1>Kerko</h1>
+                    <h1>Kerko ne Google</h1>
+
+                    <div class="gcse-searchbox-only">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -230,6 +270,7 @@
 <script type="application/javascript" src="../js/dashboard/showKerko.js"></script>
 <script type="application/javascript" src="../js/dashboard/showVoto.js"></script>
 <script type="application/javascript" src="../js/dashboard/votoProf.js"></script>
-
+<script type="application/javascript" src="../js/dashboard/postBox.js"></script>
+<script type="application/javascript" async src="https://cse.google.com/cse.js?cx=357303b24124d51af"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+.fa-poll-h{
+    overflow: hidden;
+    color: black;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    text-shadow:  3px 3px var(--clr-neon);
+    margin-top: 35px;
+}
+.fa-poll-h:hover,
+.fa-poll-h:focus{
+    color: black;
+    margin-top: 35px;
+}
+.fa-poll-h:hover::before,
+.fa-poll-h:focus::before{
+    opacity: 1;
+}
+.fa-poll-h:hover::after,
+.fa-poll-h:focus::after{
+    opacity: 1;
+}

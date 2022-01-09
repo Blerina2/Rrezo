@@ -1,0 +1,764 @@
+/*https://codepen.io/tag/css-animation?cursor=ZD0xJm89MCZwPTYz*/
+#flowerId{
+    margin-top: 270px;
+    margin-left: 150px;
+    --golden: 2.3999632297;
+    --bg: #1a1b1f;
+}
+
+#bloom {
+    visibility: hidden;
+    pointer-events: none;
+}
+.flower {
+    --size: 40vmin;
+    --multiplier: 1;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+    border-radius: var(--size);
+    transform: rotate(-90deg);
+}
+.pedal {
+    --iPercent: calc(var(--i) / var(--num));
+    --iPercentInv: calc(1 - var(--iPercent));
+    --pSize: calc(var(--size) * var(--iPercent) * 0.2 + 3%);
+    --angle: calc(var(--i) * var(--golden) * var(--multiplier) * 1rad);
+    --x: calc(var(--iPercent) * var(--size) * 0.5);
+    --opacity: calc(var(--iPercent) * 0.5);
+    --hue: calc(var(--iHex) * 1);
+    --color1: var(--clr-neon);
+    --color2: hsla(calc(var(--hue) + 240), 100%, 50%, 1);
+    --height: calc(var(--pSize) * var(--iPercentInv) + 0.2%);
+    --z: calc(var(--num) - var(--i));
+    width: var(--pSize);
+    height: var(--height);
+    z-index: var(--z);
+    border-radius: 999px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(90deg, var(--color1), var(--color2));
+    box-shadow: 0 0 20px var(--color2);
+    transform: rotate(calc(var(--angle) * 1.0015)) translate(0, 0) scale(calc(var(--iPercentInv) * 0.3));
+    animation: openThenRotate 800s infinite calc(var(--iPercent) * 0.1s) normal ease-in-out forwards;
+}
+.select-0 .pedal:nth-child(0n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-1 .pedal:nth-child(1n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-1 .pedal:nth-child(1n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-2 .pedal:nth-child(2n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-2 .pedal:nth-child(2n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-2 .pedal:nth-child(2n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-3 .pedal:nth-child(3n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-3 .pedal:nth-child(3n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-3 .pedal:nth-child(3n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-3 .pedal:nth-child(3n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-4 .pedal:nth-child(4n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-4 .pedal:nth-child(4n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-4 .pedal:nth-child(4n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-4 .pedal:nth-child(4n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-4 .pedal:nth-child(4n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-5 .pedal:nth-child(5n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-5 .pedal:nth-child(5n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-5 .pedal:nth-child(5n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-5 .pedal:nth-child(5n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-5 .pedal:nth-child(5n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-5 .pedal:nth-child(5n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-6 .pedal:nth-child(6n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-6 .pedal:nth-child(6n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-6 .pedal:nth-child(6n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-6 .pedal:nth-child(6n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-6 .pedal:nth-child(6n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-6 .pedal:nth-child(6n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-6 .pedal:nth-child(6n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-7 .pedal:nth-child(7n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-7 .pedal:nth-child(7n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-7 .pedal:nth-child(7n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-7 .pedal:nth-child(7n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-7 .pedal:nth-child(7n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-7 .pedal:nth-child(7n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-7 .pedal:nth-child(7n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-7 .pedal:nth-child(7n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-8 .pedal:nth-child(8n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-8 .pedal:nth-child(8n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-8 .pedal:nth-child(8n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-8 .pedal:nth-child(8n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-8 .pedal:nth-child(8n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-8 .pedal:nth-child(8n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-8 .pedal:nth-child(8n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-8 .pedal:nth-child(8n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-8 .pedal:nth-child(8n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-9 .pedal:nth-child(9n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-9 .pedal:nth-child(9n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-9 .pedal:nth-child(9n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-9 .pedal:nth-child(9n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-9 .pedal:nth-child(9n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-9 .pedal:nth-child(9n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-9 .pedal:nth-child(9n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-9 .pedal:nth-child(9n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-9 .pedal:nth-child(9n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-9 .pedal:nth-child(9n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-10 .pedal:nth-child(10n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-10 .pedal:nth-child(10n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-10 .pedal:nth-child(10n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-10 .pedal:nth-child(10n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-10 .pedal:nth-child(10n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-10 .pedal:nth-child(10n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-10 .pedal:nth-child(10n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-10 .pedal:nth-child(10n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-10 .pedal:nth-child(10n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-10 .pedal:nth-child(10n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-10 .pedal:nth-child(10n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-11 .pedal:nth-child(11n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-11 .pedal:nth-child(11n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-11 .pedal:nth-child(11n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-11 .pedal:nth-child(11n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-11 .pedal:nth-child(11n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-11 .pedal:nth-child(11n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-11 .pedal:nth-child(11n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-11 .pedal:nth-child(11n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-11 .pedal:nth-child(11n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-11 .pedal:nth-child(11n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-11 .pedal:nth-child(11n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-11 .pedal:nth-child(11n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-12 .pedal:nth-child(12n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-12 .pedal:nth-child(12n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-12 .pedal:nth-child(12n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-12 .pedal:nth-child(12n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-12 .pedal:nth-child(12n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-12 .pedal:nth-child(12n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-12 .pedal:nth-child(12n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-12 .pedal:nth-child(12n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-12 .pedal:nth-child(12n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-12 .pedal:nth-child(12n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-12 .pedal:nth-child(12n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-12 .pedal:nth-child(12n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-12 .pedal:nth-child(12n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-13 .pedal:nth-child(13n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-13 .pedal:nth-child(13n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-13 .pedal:nth-child(13n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-13 .pedal:nth-child(13n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-13 .pedal:nth-child(13n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-13 .pedal:nth-child(13n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-13 .pedal:nth-child(13n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-13 .pedal:nth-child(13n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-13 .pedal:nth-child(13n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-13 .pedal:nth-child(13n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-13 .pedal:nth-child(13n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-13 .pedal:nth-child(13n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-13 .pedal:nth-child(13n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-13 .pedal:nth-child(13n + 13) {
+    --hue: calc(var(--iHex) + 221);
+}
+.select-14 .pedal:nth-child(14n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-14 .pedal:nth-child(14n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-14 .pedal:nth-child(14n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-14 .pedal:nth-child(14n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-14 .pedal:nth-child(14n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-14 .pedal:nth-child(14n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-14 .pedal:nth-child(14n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-14 .pedal:nth-child(14n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-14 .pedal:nth-child(14n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-14 .pedal:nth-child(14n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-14 .pedal:nth-child(14n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-14 .pedal:nth-child(14n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-14 .pedal:nth-child(14n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-14 .pedal:nth-child(14n + 13) {
+    --hue: calc(var(--iHex) + 221);
+}
+.select-14 .pedal:nth-child(14n + 14) {
+    --hue: calc(var(--iHex) + 238);
+}
+.select-15 .pedal:nth-child(15n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-15 .pedal:nth-child(15n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-15 .pedal:nth-child(15n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-15 .pedal:nth-child(15n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-15 .pedal:nth-child(15n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-15 .pedal:nth-child(15n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-15 .pedal:nth-child(15n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-15 .pedal:nth-child(15n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-15 .pedal:nth-child(15n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-15 .pedal:nth-child(15n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-15 .pedal:nth-child(15n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-15 .pedal:nth-child(15n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-15 .pedal:nth-child(15n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-15 .pedal:nth-child(15n + 13) {
+    --hue: calc(var(--iHex) + 221);
+}
+.select-15 .pedal:nth-child(15n + 14) {
+    --hue: calc(var(--iHex) + 238);
+}
+.select-15 .pedal:nth-child(15n + 15) {
+    --hue: calc(var(--iHex) + 255);
+}
+.select-16 .pedal:nth-child(16n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-16 .pedal:nth-child(16n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-16 .pedal:nth-child(16n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-16 .pedal:nth-child(16n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-16 .pedal:nth-child(16n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-16 .pedal:nth-child(16n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-16 .pedal:nth-child(16n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-16 .pedal:nth-child(16n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-16 .pedal:nth-child(16n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-16 .pedal:nth-child(16n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-16 .pedal:nth-child(16n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-16 .pedal:nth-child(16n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-16 .pedal:nth-child(16n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-16 .pedal:nth-child(16n + 13) {
+    --hue: calc(var(--iHex) + 221);
+}
+.select-16 .pedal:nth-child(16n + 14) {
+    --hue: calc(var(--iHex) + 238);
+}
+.select-16 .pedal:nth-child(16n + 15) {
+    --hue: calc(var(--iHex) + 255);
+}
+.select-16 .pedal:nth-child(16n + 16) {
+    --hue: calc(var(--iHex) + 272);
+}
+.select-17 .pedal:nth-child(17n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-17 .pedal:nth-child(17n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-17 .pedal:nth-child(17n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-17 .pedal:nth-child(17n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-17 .pedal:nth-child(17n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-17 .pedal:nth-child(17n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-17 .pedal:nth-child(17n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-17 .pedal:nth-child(17n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-17 .pedal:nth-child(17n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-17 .pedal:nth-child(17n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-17 .pedal:nth-child(17n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-17 .pedal:nth-child(17n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-17 .pedal:nth-child(17n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-17 .pedal:nth-child(17n + 13) {
+    --hue: calc(var(--iHex) + 221);
+}
+.select-17 .pedal:nth-child(17n + 14) {
+    --hue: calc(var(--iHex) + 238);
+}
+.select-17 .pedal:nth-child(17n + 15) {
+    --hue: calc(var(--iHex) + 255);
+}
+.select-17 .pedal:nth-child(17n + 16) {
+    --hue: calc(var(--iHex) + 272);
+}
+.select-17 .pedal:nth-child(17n + 17) {
+    --hue: calc(var(--iHex) + 289);
+}
+.select-18 .pedal:nth-child(18n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-18 .pedal:nth-child(18n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-18 .pedal:nth-child(18n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-18 .pedal:nth-child(18n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-18 .pedal:nth-child(18n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-18 .pedal:nth-child(18n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-18 .pedal:nth-child(18n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-18 .pedal:nth-child(18n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-18 .pedal:nth-child(18n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-18 .pedal:nth-child(18n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-18 .pedal:nth-child(18n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-18 .pedal:nth-child(18n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-18 .pedal:nth-child(18n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-18 .pedal:nth-child(18n + 13) {
+    --hue: calc(var(--iHex) + 221);
+}
+.select-18 .pedal:nth-child(18n + 14) {
+    --hue: calc(var(--iHex) + 238);
+}
+.select-18 .pedal:nth-child(18n + 15) {
+    --hue: calc(var(--iHex) + 255);
+}
+.select-18 .pedal:nth-child(18n + 16) {
+    --hue: calc(var(--iHex) + 272);
+}
+.select-18 .pedal:nth-child(18n + 17) {
+    --hue: calc(var(--iHex) + 289);
+}
+.select-18 .pedal:nth-child(18n + 18) {
+    --hue: calc(var(--iHex) + 306);
+}
+.select-19 .pedal:nth-child(19n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-19 .pedal:nth-child(19n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-19 .pedal:nth-child(19n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-19 .pedal:nth-child(19n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-19 .pedal:nth-child(19n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-19 .pedal:nth-child(19n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-19 .pedal:nth-child(19n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-19 .pedal:nth-child(19n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-19 .pedal:nth-child(19n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-19 .pedal:nth-child(19n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-19 .pedal:nth-child(19n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-19 .pedal:nth-child(19n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-19 .pedal:nth-child(19n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-19 .pedal:nth-child(19n + 13) {
+    --hue: calc(var(--iHex) + 221);
+}
+.select-19 .pedal:nth-child(19n + 14) {
+    --hue: calc(var(--iHex) + 238);
+}
+.select-19 .pedal:nth-child(19n + 15) {
+    --hue: calc(var(--iHex) + 255);
+}
+.select-19 .pedal:nth-child(19n + 16) {
+    --hue: calc(var(--iHex) + 272);
+}
+.select-19 .pedal:nth-child(19n + 17) {
+    --hue: calc(var(--iHex) + 289);
+}
+.select-19 .pedal:nth-child(19n + 18) {
+    --hue: calc(var(--iHex) + 306);
+}
+.select-19 .pedal:nth-child(19n + 19) {
+    --hue: calc(var(--iHex) + 323);
+}
+.select-20 .pedal:nth-child(20n + 0) {
+    --hue: calc(var(--iHex) + 0);
+}
+.select-20 .pedal:nth-child(20n + 1) {
+    --hue: calc(var(--iHex) + 17);
+}
+.select-20 .pedal:nth-child(20n + 2) {
+    --hue: calc(var(--iHex) + 34);
+}
+.select-20 .pedal:nth-child(20n + 3) {
+    --hue: calc(var(--iHex) + 51);
+}
+.select-20 .pedal:nth-child(20n + 4) {
+    --hue: calc(var(--iHex) + 68);
+}
+.select-20 .pedal:nth-child(20n + 5) {
+    --hue: calc(var(--iHex) + 85);
+}
+.select-20 .pedal:nth-child(20n + 6) {
+    --hue: calc(var(--iHex) + 102);
+}
+.select-20 .pedal:nth-child(20n + 7) {
+    --hue: calc(var(--iHex) + 119);
+}
+.select-20 .pedal:nth-child(20n + 8) {
+    --hue: calc(var(--iHex) + 136);
+}
+.select-20 .pedal:nth-child(20n + 9) {
+    --hue: calc(var(--iHex) + 153);
+}
+.select-20 .pedal:nth-child(20n + 10) {
+    --hue: calc(var(--iHex) + 170);
+}
+.select-20 .pedal:nth-child(20n + 11) {
+    --hue: calc(var(--iHex) + 187);
+}
+.select-20 .pedal:nth-child(20n + 12) {
+    --hue: calc(var(--iHex) + 204);
+}
+.select-20 .pedal:nth-child(20n + 13) {
+    --hue: calc(var(--iHex) + 221);
+}
+.select-20 .pedal:nth-child(20n + 14) {
+    --hue: calc(var(--iHex) + 238);
+}
+.select-20 .pedal:nth-child(20n + 15) {
+    --hue: calc(var(--iHex) + 255);
+}
+.select-20 .pedal:nth-child(20n + 16) {
+    --hue: calc(var(--iHex) + 272);
+}
+.select-20 .pedal:nth-child(20n + 17) {
+    --hue: calc(var(--iHex) + 289);
+}
+.select-20 .pedal:nth-child(20n + 18) {
+    --hue: calc(var(--iHex) + 306);
+}
+.select-20 .pedal:nth-child(20n + 19) {
+    --hue: calc(var(--iHex) + 323);
+}
+.select-20 .pedal:nth-child(20n + 20) {
+    --hue: calc(var(--iHex) + 340);
+}
+.pedal:first-child {
+    background: var(--color2);
+    --meSize: calc(var(--pSize) * 0.93);
+    width: var(--meSize);
+    height: var(--meSize);
+    opacity: 0.7;
+}
+@keyframes openThenRotate {
+    from {
+        transform: rotate(calc(var(--angle) * 1.0005)) translate(0, 0) scale(calc(var(--iPercentInv) * 0.3));
+        animation-timing-function: ease-in-out;
+    }
+    0.3% {
+        transform: rotate(calc(var(--angle) * 1)) translate(calc(var(--x) * 1), 0) scale(1.1);
+        animation-timing-function: ease-in-out;
+    }
+    50.4% {
+        transform: rotate(calc(var(--angle) * 0)) translate(calc(var(--x) * 1), 0) scale(1);
+    }
+    to {
+        transform: rotate(calc(var(--angle) * 1)) translate(calc(var(--x) * 1), 0) scale(1);
+    }
+}

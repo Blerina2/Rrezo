@@ -114,6 +114,15 @@ app.get("/logout",(request,response)=>{
     response.end();
 });
 
+app.get("/ndihme",(request,response)=>{
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/ndihme.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
+
 app.get("/profili",(request,response)=> {
         if (request.session.loggedin) {
             response.sendFile(path.join(__dirname + "/frontend/views/profili.html"));
@@ -123,7 +132,41 @@ app.get("/profili",(request,response)=> {
         }
     });
 
+app.get("/userInbox",(request,response)=> {
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/userbox.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
 
+app.get("/votimiim",(request,response)=> {
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/votimiim.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
+
+app.get("/editProfile",(request,response)=> {
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/editProfile.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
+
+app.get("/komunikimiShoqeror",(request,response)=> {
+    if (request.session.loggedin) {
+        response.sendFile(path.join(__dirname + "/frontend/views/komunikimiShoqeror.html"));
+    } else {
+        response.redirect("/index");
+        response.end();
+    }
+});
 
 
 

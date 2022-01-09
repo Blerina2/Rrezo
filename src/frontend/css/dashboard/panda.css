@@ -1,0 +1,25 @@
+.box {
+    margin: 50px;
+    width:153px;
+    height:103px;
+    background: url("../../images/Panda.png") no-repeat;
+    margin-top: 10px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation: repeatit 1s linear 3s infinite alternate;
+    /* Standard syntax */
+    animation: repeatit 3s linear 0s infinite alternate;
+    border-radius: 30px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes repeatit {
+    from {left: 0;}
+    to {left: 73%;}
+}
+
+/* Standard syntax */
+@keyframes repeatit {
+    from {left: 0;}
+    to {left: 73%;}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Komunikimi shoqeror</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/komunikimiShoqeror/video.css">
+    <link type="text/css" rel="stylesheet" href="../css/komunikimiShoqeror/komuShoqThe.css">
+    <link type="text/css" rel="stylesheet" href="../css/komunikimiShoqeror/grid-container-kom-sh.css">
+    <link type="text/css" rel="stylesheet" href="../css/komunikimiShoqeror/chatbot.css">
+
+</head>
+<body>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="video">
+            <video width="300px" height="200px" muted autoplay>
+                <source src="../resources/video/Pink.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="grid-item">
+<!--        https://github.com/sylviapap/chatbot-->
+        <div id="container" class="container">
+            <div id="chat" class="chat">
+                <div id="messages" class="messages"></div>
+                <input id="input" type="text" placeholder="Shkruaj dicka..." autocomplete="off" autofocus="true" />
+            </div>
+            <img src="../images/bot.png" style="height: 200px" alt="Robot cartoon" height="500vh">
+        </div>
+    </div>
+    <div class="grid-item">3</div>
+</div>
+<script type="application/javascript" src="../js/komunikimShoqeror/index.js"></script>
+<script type="application/javascript" src="../js/komunikimShoqeror/constants.js"></script>
+<script type="application/javascript" src="../js/komunikimShoqeror/speech.js"></script>
+</body>
+</html>

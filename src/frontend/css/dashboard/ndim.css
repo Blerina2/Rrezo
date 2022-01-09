@@ -26,5 +26,5 @@
     color: white;
     box-shadow: inset 0 0 0.5em 0 var(--clr-neon),0 0 0.5em 0 var(--clr-neon);
     border: var(--clr-neon) 1px solid;
-    overflow: hidden;
+    overflow: auto;
 }

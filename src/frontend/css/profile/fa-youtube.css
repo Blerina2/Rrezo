@@ -1,0 +1,23 @@
+.fa-youtube{
+    overflow: hidden;
+    color: black;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    text-shadow:  3px 3px var(--clr-neon);
+}
+.fa-youtube:hover,
+.fa-youtube:focus{
+    color: black;
+}
+.fa-youtube:hover::before,
+.fa-youtube:focus::before{
+    opacity: 1;
+}
+.fa-youtube:hover::after,
+.fa-youtube:focus::after{
+    opacity: 1;
+}
+.youtube{
+    all: unset;
+}
