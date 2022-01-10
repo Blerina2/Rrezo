@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 :root {
-    --clr-neon: hsl(319, 70%, 60%);
-    --clr-bg: hsl(323 21% 16%);
-    --clr-neon-light: #f046ff;
-    --clr-purple: purple;
-    --clr-neon-qelt: #FF10e8;
-    --clr-neon-mshelt: #ba24c2;
-    --clr-neon-zi: #d43ddb;
-    --clr-coral: lightcoral;
-    --clr-pink-bardh: #edbef1;
-    --clr-pink-qelt: lightpink;
-    --clr-lekure: papayawhip;
-    --clr-kuq-qelt: #e5ccc9;
-    --clr-sdi: #e88bee;
-    --clr-background-color: black;
+    --clr-neon:hsl(317 100% 54%);
+    --clr-bg:hsl(323 21% 16%);
+    --clr-neon-light:#f046ff ;
+    --clr-purple:purple ;
+    --clr-neon-qelt:#FF10e8 ;
+    --clr-neon-mshelt:#ba24c2 ;
+    --clr-neon-zi:#d43ddb ;
+    --clr-coral:lightcoral ;
+    --clr-pink-bardh:#edbef1 ;
+    --clr-pink-qelt: #893bd2;
+    --clr-lekure:papayawhip;
+    --clr-kuq-qelt:#e5ccc9;
+    --clr-sdi:#e88bee;
+    --clr-background-color:black;
 }
 
 html {
@@ -22,8 +22,8 @@ html {
     width: 100%;
     z-index: -1;
     overflow: hidden;
-    background: linear-gradient(to bottom, var(--clr-bg) 1%, var(--clr-neon) 50%, var(--clr-neon-light) 70%, var(--clr-purple) 90%,
-    var(--clr-neon-qelt) 95%, var(--clr-neon-mshelt) 99%) no-repeat;
+    background: linear-gradient(to bottom, var(--clr-neon-mshelt) 5%, var(--clr-neon) 110%, var(--clr-neon-light) 120%, var(--clr-purple) 130%,
+    var(--clr-neon-qelt) 115%, var(--clr-neon-mshelt) 100%) no-repeat;
 }
 /*https://codepen.io/cassidoo/pen/zygvGj*/
 .planet{
@@ -33,7 +33,7 @@ html {
     transform: translateX(-50%);
     width: 250px;
     height: 250px;
-    background: linear-gradient(to bottom,transparent 30%,var(--clr-neon) 50%,var(--clr-neon-light) 70%, var(--clr-neon) 100% ) ;
+    background: linear-gradient(to bottom,transparent 20%,var(--clr-neon-mshelt) 10%,var(--clr-neon-light) 70%, var(--clr-neon) 100% ) ;
     border-radius: 50% ;
     filter: blur(6px);
     mask-image: radial-gradient(ellipse 100% 100% at center, transparent 40%, black 60%);
