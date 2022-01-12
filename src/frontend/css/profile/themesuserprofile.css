@@ -22,8 +22,8 @@ html {
     width: 100%;
     z-index: -1;
     overflow: hidden;
-    background: linear-gradient(to bottom, var(--clr-bg) 1%, var(--clr-neon) 50%, var(--clr-neon-light) 70%, var(--clr-purple) 90%,
-    var(--clr-neon-qelt) 95%, var(--clr-neon-mshelt) 99%) no-repeat;
+    background: linear-gradient(to bottom, var(--clr-bg) 1%, var(--clr-neon-mshelt) 30%, var(--clr-neon-light) 100%, var(--clr-purple) 120%,
+    var(--clr-neon-qelt) 130%, var(--clr-neon-mshelt) 140%) no-repeat;
 }
 /*https://codepen.io/cassidoo/pen/zygvGj*/
 .planet{
@@ -33,7 +33,7 @@ html {
     transform: translateX(-50%);
     width: 250px;
     height: 250px;
-    background: linear-gradient(to bottom,transparent 30%,var(--clr-neon) 50%,var(--clr-neon-light) 70%, var(--clr-neon) 100% ) ;
+    background: linear-gradient(to bottom,transparent 50%,var(--clr-neon-mshelt) 80%,var(--clr-neon-light) 100%, var(--clr-neon) 110% ) ;
     border-radius: 50% ;
     filter: blur(6px);
     mask-image: radial-gradient(ellipse 100% 100% at center, transparent 40%, black 60%);
