@@ -57,6 +57,18 @@ let query=db_rrezo.query(insert_sql,pytMesazh,(error,query_results)=>{
 });
 
 app.post("/signUp",(request,response)=>{
+
+    try {
+        validimiEmail(request.body.EmailPerdoruesit);
+        validimiEmri(request.body.EmriPerdoruesi);
+        validimiPasvordi(request.body.PasvordiPerdoruesit);
+    }
+    catch(err) {
+        response.sendFile(path.join(__dirname+"/frontend/views/index.html"));
+    }
+
+
+
    let perdoruesi={
        "Emri":request.body.EmriPerdoruesi,
        "Email":request.body.EmailPerdoruesit,
@@ -75,6 +87,46 @@ app.post("/signUp",(request,response)=>{
     });
 
 });
+function validimiEmail(mail)
+{
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+    {
+        return true;
+    }
+    throw 'Imella nuk eshte valide!';
+}
+
+function validimiEmri(emri)
+{
+    if ( /^[a-zA-Z]+ [a-zA-Z]+$/.test(emri))
+    {
+        return true;
+    }
+    throw 'Emri nuk eshte valid!';
+}
+
+function validimiPasvordi(pasvordi)
+{
+    if(!pasvordi.length >=4){
+        throw 'Pasvordi ka me pak se 4 karaktere!';
+    }
+    var numbers =/[0-9]/g;
+    if (!numbers.test(pasvordi)){
+        throw 'Pasvordi nuk permbane numer!';
+    }
+    var upperCaseLetters = /[A-Z]/g;
+    if (!upperCaseLetters.test(pasvordi)){
+        throw 'Pasvordi nuk ka shkronje te madhe!';
+    }
+    var lowerCaseLetters = /[a-z]/g;
+    if(!lowerCaseLetters.test(pasvordi)){
+        throw 'pasvordi nuk ka shkronje te vogla';
+    }
+
+    return true;
+}
+
+
 
 app.post("/signIn",(request,response)=>{
 let query_sql="select Email from perdoruesi where Passvordi = ? ";
