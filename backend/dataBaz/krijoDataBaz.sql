@@ -1,4 +1,4 @@
-create database rrezo;
+-- create database rrezo;
 create table PytMesazh(
   id int auto_increment primary key ,
   Mesazh text,
