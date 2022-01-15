@@ -21,7 +21,15 @@
 
 </head>
 <body>
+<div id = "div1">
 
+    <h3 id = "resultCounter">
+        <div id = "div3">
+            <output id = "result"  style = "color:rgb(17, 3, 17); font-size:20px;"></output>
+
+        </div>
+    </h3>
+</div>
 <div class="user-profile-cachel">
     <div class="grid-container-user-profile">
         <div class="header-item"></div>
@@ -325,7 +333,38 @@
         <div class="footer-item"></div>
     </div>
 </div>
+<script>
+    if(window.Worker){
+        var worker = new Worker("../js/profili/webworkers.js");
 
+        worker.onmessage = function(event){
+            document.getElementById("result").innerHTML = event.data;
+        }
+    }else{
+        alert("Sorry , your browser don't support web worker");
+    }
+</script>
+<style>
+
+    #div1{
+        height:40px;
+        width:40px;
+        position:absolute;
+        right:10px;
+        bottom:10px;
+        background: linear-gradient(rgb(189, 182, 255), rgb(143, 112, 172));
+
+    }
+    #div3{
+
+        font-size:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+
+    }
+</style>
 <script type="text/javascript" src="../js/profili/ndryshopamjenperdoruesit.js"></script>
+<script type="text/javascript" src="../js/profili/webworkers.js"></script>
 </body>
 </html>
